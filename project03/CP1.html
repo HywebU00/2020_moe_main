@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link type="image/ico" rel="icon" href="images/basic/favicon.png" /> 
+	<title>主題網三</title> 
+
+	<!-- Bootstrap CSS -->
+	<link href="assets/module/bootstrap-3.3.2/css/bootstrap.css" rel="stylesheet">
+	<link href="assets/module/bootstrap-3.3.2/css/bootstrap-theme.css" rel="stylesheet">
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+	<!-- slick 輪播-->
+	<link href="assets/module/slick/slick.css" rel="stylesheet">
+	<link href="assets/module/slick/slick-theme.css" rel="stylesheet">
+
+	<!-- social-buttons -->
+	<link href="assets/module/fontello/css/fontello.css" rel="stylesheet">
+	<link href="assets/module/fontello/css/animation.css" rel="stylesheet">
+
+	<!-- Add fancyBox main CSS files -->
+	<link rel="stylesheet" type="text/css" href="assets/module/fancyBox/jquery.fancybox.css?v=2.1.5" media="screen" />
+
+	<!-- 自訂CSS -->
+	<link href="css/all.css" rel="stylesheet">
+</head>
+<body>
+	<!-- Header -->
+	<section id="Header" class="Top-Bg">
+		<nav class="navbar megamenu" role="navigation">
+			<div class="accesskey hidden-xs"><a href="#" title="header" id="accesskeyU" accesskey="U">:::</a></div>
+			<div class="container">
+				<div class="navbar-header">            
+					<button type="button" class="navbar-toggle pull-left" data-toggle="collapse" data-target="#offcanvas-left">
+						<span class="sr-only">Toggle navigation</span><i class="icon-menu"></i>
+					</button>
+					<div class="Logo"><a href="#" title=""><img src="images/basic/logo.png" class="img-responsive" alt=""></a></div>
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#offcanvas-right">
+						<span class="sr-only">Toggle navigation</span><i class="icon-down-open"></i>
+					</button>
+				</div>
+				<div class="Right collapse navbar-collapse" id="offcanvas-right" role="navigation">
+					<div class="pull-sm-right pull-md-right pull-lg-right">
+						<ul class="nav navbar-nav">
+							<li class="active"><a href="#" title="">回首頁</a></li>
+							<li><a href="#" title="">網站導覽</a></li>
+							<li><a href="#" title="">RSS訂閱</a></li>
+						</ul> 
+						<div class="Search">   
+							<div class="accesskey hidden-xs"><a href="#" title="搜尋" id="accesskeyS" accesskey="S">:::</a></div> 
+							<form class="navbar-form pull-sm-right pull-md-right pull-lg-right" role="search">       
+								<div class="input-group">
+									<input type="text" class="form-control" placeholder="請輸入查詢字串">
+									<span class="input-group-btn">
+										<button type="button" class="btn btn-default">
+											<span class="glyphicon glyphicon-search"></span>
+										</button>
+									</span>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="Left collapse navbar-collapse" id="offcanvas-left" role="navigation">
+					<ul class="nav navbar-nav">
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">第一層選單<b class="caret"></b></a>
+							<ul role="menu" class="dropdown-menu">
+								<li><a href="#" title="">第二層</a></li>
+								<li><a href="#" title="">第二層</a></li>
+								<li><a href="#" title="">第二層</a></li>
+								<li><a href="#" title="">第二層</a></li>
+								<li><a href="#" title="">第二層</a></li>
+								<li><a href="#" title="">第二層</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">第一層選單<b class="caret"></b></a>
+							<ul role="menu" class="dropdown-menu">
+								<li><a href="#" title="">第二層如果字很多的測試</a></li>
+								<li><a href="#" title="">第二層</a></li>
+								<li><a href="#" title="">第二層</a></li>
+								<li><a href="#" title="">第二層</a></li>
+								<li><a href="#" title="">第二層</a></li>
+								<li><a href="#" title="">第二層</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">第一層選單<b class="caret"></b></a>
+							<ul role="menu" class="dropdown-menu">
+								<li><a href="#" title="">第二層</a></li>
+								<li><a href="#" title="">第二層</a></li>
+								<li><a href="#" title="">第二層</a></li>
+								<li><a href="#" title="">第二層</a></li>
+								<li><a href="#" title="">第二層</a></li>
+								<li><a href="#" title="">第二層</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">第一層選單<b class="caret"></b></a>
+							<ul role="menu" class="dropdown-menu">
+								<li><a href="#" title="">第二層</a></li>
+								<li><a href="#" title="">第二層</a></li>
+								<li><a href="#" title="">第二層</a></li>
+								<li><a href="#" title="">第二層</a></li>
+								<li><a href="#" title="">第二層</a></li>
+								<li><a href="#" title="">第二層</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</section>
+	<!-- Content -->
+	<section id="MainContent" class="clearbg">
+		<!-- Function -->
+		<div class="Block">
+			<div class="container">
+				<div class="row">
+					<div class="accesskey hidden-xs"><a href="#" title="中央內容區塊" id="accesskeyC" accesskey="C">:::</a></div>
+					<article class="col-sm-12 col-md-12">
+						<!-- breadcrumb -->
+						<div id="breadcrumb" class="">
+							<ol class="breadcrumb">
+								<li><i class="icon-home-1"></i><a href="#" title="">首頁</a></li>
+								<li><a href="#" title="">最新消息</a></li>
+								<li class="active">第二層</li>
+							</ol>
+						</div>
+					</article>
+				</div>
+			</div>
+		</div>
+		<!-- Content -->
+		<div class="Block Inner_Content">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="Box">
+							<h2 class="Title">最新消息</h2>
+							<div class="Inner clear-fix">
+								<!--  -->
+								<div class="Block">			
+									<!-- Meta -->
+									<div class="Meta">
+										<div class="MetaDay"><i class="icon-calendar"></i><span>發布日期：</span>2015/10/15</div>
+										<div class="MetaDay"><i class="icon-eye"></i><span>點閱人次：</span>9999</div>
+										<div class="MetaDay"><i class="icon-thumbs-up"></i><span>推薦人次：</span>9999</div>	
+										<div class="Community_Btn">	
+											<a href="#" class="FB-BTN" title="Facebook"><i class="icon-facebook-1"></i></a>
+											<a href="#" class="Print-BTN" title="友善列印"><i class="icon-print"></i></a>
+										</div>
+									</div>
+									<!-- 左圖右文-->
+									<div class="Block">
+										<div class="FotoxText clearfix">
+											<div class="LeftFoto">
+												<a class="fancybox-buttons" data-fancybox-group="button" href="images/books/001.jpg" title="那些無止盡的日子"><img src="images/books/001.jpg" class="img-responsive" ></a>
+												<p>圖片說明文字圖片說明文字圖片說明文字</p>
+											</div>
+											<h1>大標題</h1>
+											<p>此步道前2.5 公里路段大抵沿昔日運材軌道而行，山徑寬敞平緩，繞行於山腰之間，輕鬆易行，沿途可觀察動物生態、板岩岩壁、翠綠苔蘚、紅檜林、柳杉林、山櫻花林，以及里程碑、工寮、轉轍器等鐵道歷史遺跡。步道自3 公里處漸次離開山腰路，起伏變大，轉折進入稜脈，3.2 公里至步道終點的路段則綿亙於稜線上，成片的山毛櫸林即在稜脈北側迎風坡，係台灣面積最大的山毛櫸純林，妝點著南澳北溪源頭的群山萬嶺，令人嘆為觀止。</p>
+
+											<h3>中標題</h3>
+											<p>此步道前2.5 公里路段大抵沿昔日運材軌道而行，山徑寬敞平緩，繞行於山腰之間，輕鬆易行，沿途可觀察動物生態、板岩岩壁、翠綠苔蘚、紅檜林、柳杉林、山櫻花林，以及里程碑、工寮、轉轍器等鐵道歷史遺跡。步道自3 公里處漸次離開山腰路，起伏變大，轉折進入稜脈，3.2 公里至步道終點的路段則綿亙於稜線上，成片的山毛櫸林即在稜脈北側迎風坡，係台灣面積最大的<a href="#">山毛櫸</a>純林，妝點著南澳北溪源頭的群山萬嶺，令人嘆為觀止。</p>
+
+											<h4>小標題</h4>
+											<p>此步道前2.5 公里路段大抵沿昔日運材軌道而行，山徑寬敞平緩，繞行於山腰之間，輕鬆易行，沿途可觀察動物生態、板岩岩壁、翠綠苔蘚、紅檜林、柳杉林、山櫻花林，以及里程碑、工寮、轉轍器等鐵道歷史遺跡。步道自3 公里處漸次離開山腰路，起伏變大，轉折進入稜脈，3.2 公里至步道終點的路段則綿亙於稜線上，成片的山毛櫸林即在稜脈北側迎風坡，係台灣面積最大的山毛櫸純林，妝點著南澳北溪源頭的群山萬嶺，令人嘆為觀止。</p>
+
+										</div>
+									</div>
+									
+									<!-- 文字刪除線-->
+									<del>此行文字是要被視為已刪除文字。</del>
+									<!-- 新加入的文字-->
+									<ins>此行文字是要被視為已新加入的文字。</ins>
+									<!-- 文字底線-->
+									<u>此行文將會呈現底線效果。</u>
+									<!-- 標題-->
+									<h1>h1. Bootstrap heading</h1>
+									<h2>h2. Bootstrap heading</h2>
+									<h3>h3. Bootstrap heading</h3>
+									<h4>h4. Bootstrap heading</h4>
+									<h5>h5. Bootstrap heading</h5>
+									<h6>h6. Bootstrap heading</h6>
+									<h1>h1. Bootstrap heading <small>Secondary text</small></h1>
+									<h2>h2. Bootstrap heading <small>Secondary text</small></h2>
+									<h3>h3. Bootstrap heading <small>Secondary text</small></h3>
+									<h4>h4. Bootstrap heading <small>Secondary text</small></h4>
+									<h5>h5. Bootstrap heading <small>Secondary text</small></h5>
+									<h6>h6. Bootstrap heading <small>Secondary text</small></h6>
+									<!-- 文字對齊-->
+									<p class="text-left">靠左對齊文字。</p>
+									<p class="text-center">置中對齊文字。</p>
+									<p class="text-right">靠右對齊文字。</p>
+									<p class="text-justify">平均對齊文字。</p>
+									<p class="text-nowrap">不換行文字。</p>
+									<!--文字大小寫-->
+									<p class="text-lowercase">Lowercased text.（全小寫）</p>
+									<p class="text-uppercase">Uppercased text.（全大寫）</p>
+									<p class="text-capitalize">Capitalized text.（字首大寫）</p>
+									<!-- 表單-->
+									<div class="table-responsive">
+										<table class="table table-bordered table-hover table-striped">
+											<tr>
+												<th>標題</th>
+												<th>標題</th>
+												<th>標題</th>
+												<th>標題</th>
+											</tr>
+											<tr>
+												<td>標題</td>
+												<td>資料資料資料</td>
+												<td>資料資料資料</td>
+												<td>資料資料資料</td>
+											</tr>
+											<tr>
+												<td>標題</td>
+												<td>資料資料資料</td>
+												<td>資料資料資料</td>
+												<td>資料資料資料</td>
+											</tr>
+											<tr>
+												<td>標題</td>
+												<td>資料資料資料</td>
+												<td>資料資料資料</td>
+												<td>資料資料資料</td>
+											</tr>
+										</table>
+									</div>
+									<div class="table-responsive">
+										<table class="table table-bordered table-hover table-striped">
+											<tr>
+												<th>標題</th>
+												<th>標題</th>
+												<th>標題</th>
+												<th>標題</th>
+											</tr>
+											<tr>
+												<th>標題</th>
+												<td>資料資料資料</td>
+												<td>資料資料資料</td>
+												<td>資料資料資料</td>
+											</tr>
+											<tr>
+												<th>標題</th>
+												<td>資料資料資料</td>
+												<td>資料資料資料</td>
+												<td>資料資料資料</td>
+											</tr>
+											<tr>
+												<th>標題</th>
+												<td>資料資料資料</td>
+												<td>資料資料資料</td>
+												<td>資料資料資料</td>
+											</tr>
+										</table>
+									</div>
+									<!-- 無邊框表單-->
+									<table class="table table-hover table-striped">
+										<tr>
+											<th>標題</th>
+											<th>標題</th>
+											<th>標題</th>
+											<th>標題</th>
+										</tr>
+										<tr>
+											<td>標題</td>
+											<td>資料資料資料</td>
+											<td>資料資料資料</td>
+											<td>資料資料資料</td>
+										</tr>
+										<tr>
+											<td>標題</td>
+											<td>資料資料資料</td>
+											<td>資料資料資料</td>
+											<td>資料資料資料</td>
+										</tr>
+										<tr>
+											<td>標題</td>
+											<td>資料資料資料</td>
+											<td>資料資料資料</td>
+											<td>資料資料資料</td>
+										</tr>
+									</table>
+									<!-- 無序清單-->
+									<h3>無序清單</h3>
+									<ul>
+										<li>無序清單</li>
+										<li>無序清單</li>
+										<li>無序清單
+											<ul>
+												<li>無序清單</li>
+												<li>無序清單</li>
+											</ul>
+										</li>
+										<li>無序清單</li>
+										<li>無序清單</li>
+										<li>無序清單</li>
+									</ul>
+									<!-- 有序清單-->
+									<h3>有序清單</h3>
+									<ol>
+										<li>有序清單</li>
+										<li>有序清單</li>
+										<li>有序清單
+											<ol>
+												<li>有序清單</li>
+												<li>有序清單</li>
+											</ol>
+										</li>
+										<li>有序清單</li>
+										<li>有序清單</li>
+										<li>有序清單</li>
+									</ol>
+
+									<!-- 術語清單-->
+									<h3>術語清單</h3>
+									<dl>
+										<dt>專業術語</dt>
+										<dd>相關描述相關描述相關描述相關描述相關描述相關描述</dd>
+									</dl>
+									<dl class="dl-horizontal">
+										<dt>專業術語</dt>
+										<dd>相關描述相關描述相關描述相關描述相關描述相關描述</dd>
+										<dt>專業術語222222</dt>
+										<dd>相關描述相關描述相關描述相關描述相關描述相關描述</dd>
+									</dl>
+
+									<!-- 圖文Slider-->
+									<div class="Block">
+										<h3>相關圖片 Slider</h3>
+										<div  class="FotoxText_Slider">
+											<div class="Responsive_slider">
+												<div class="col-xs-12 col-sm-4 col-md-4">
+													<!-- Block_Pic  此區塊拿掉即無圖-->
+													<div class="Block_Pic">
+														<a class="fancybox-buttons" data-fancybox-group="button" href="images/books/001.jpg" title="那些無止盡的日子"><img src="images/books/001.jpg" class="img-responsive" ></a>
+													</div>
+													<div class="Block_Text">
+														<div class="Block_Title"><a href="">圖檔敘述圖檔敘述圖檔敘述圖檔敘述圖檔敘述圖檔敘述圖檔敘述</a></div>
+													</div>
+												</div>
+												<div class="col-xs-12 col-sm-4 col-md-4">
+													<!-- Block_Pic  此區塊拿掉即無圖-->
+													<div class="Block_Pic">
+														<a class="fancybox-buttons" data-fancybox-group="button" href="images/books/002.jpg" title="那些無止盡的日子"><img src="images/books/002.jpg" class="img-responsive" ></a>
+													</div>
+													<div class="Block_Text">
+														<div class="Block_Title"><a href="">圖檔敘述圖檔敘述圖檔敘述圖檔敘述圖檔敘述圖檔敘述圖檔敘述</a></div>
+													</div>
+												</div>
+												<div class="col-xs-12 col-sm-4 col-md-4">
+													<!-- Block_Pic  此區塊拿掉即無圖-->
+													<div class="Block_Pic">
+														<a class="fancybox-buttons" data-fancybox-group="button" href="images/books/003.jpg" title="那些無止盡的日子"><img src="images/books/003.jpg" class="img-responsive" ></a>
+													</div>
+													<div class="Block_Text">
+														<div class="Block_Title"><a href="">圖檔敘述圖檔敘述圖檔敘述圖檔敘述圖檔敘述圖檔敘述圖檔敘述</a></div>
+													</div>
+												</div>
+												<div class="col-xs-12 col-sm-4 col-md-4">
+													<!-- Block_Pic  此區塊拿掉即無圖-->
+													<div class="Block_Pic">
+														<a class="fancybox-buttons" data-fancybox-group="button" href="images/books/001.jpg" title="那些無止盡的日子"><img src="images/books/001.jpg" class="img-responsive" ></a>
+													</div>
+													<div class="Block_Text">
+														<div class="Block_Title"><a href="">圖檔敘述圖檔敘述圖檔敘述圖檔敘述圖檔敘述圖檔敘述圖檔敘述</a></div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									
+									<!-- List_Download 檔案下載-->
+									<div class="Block">
+										<div class="List_Download">
+											<h3><i class="icon-download-outline"></i>檔案下載</h3>
+											<ul>
+												<li><a href="#">檔案名稱檔案名稱檔案名.word</a></li>
+												<li><a href="#">檔案名稱檔案名稱檔案名.pdf</a></li>
+												<li><a href="#">檔案名稱檔案名稱檔案名.txt</a></li>
+											</ul>
+										</div>
+									</div>
+									<!-- List_Link 相關連結-->
+									<div class="Block">
+										<div class="List_Link">
+											<h3><i class="icon-link"></i>相關連結</h3>
+											<ul>
+												<li><a href="">連結標題</a></li>
+												<li><a href="">連結標題</a></li>
+												<li><a href="">連結標題</a></li>
+											</ul>
+										</div>
+									</div>
+									<!-- 反饋 -->
+									<div class="Feedback">
+										<h4>目前共有<span>250</span>人熱情推薦！</h4>
+										<div class="row">
+											<div class="inner">
+												<div class="col-xs-12 col-sm-3 col-md-2"><h3><i class="icon-smile"></i>請評分</h3></div>
+												<div class="col-xs-12 col-sm-6 col-md-8">
+													<label class="radio-inline">
+														<input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 非常喜歡
+													</label>
+													<label class="radio-inline">
+														<input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 喜歡
+													</label>
+													<label class="radio-inline">
+														<input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> 尚可
+													</label>
+													<label class="radio-inline">
+														<input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 不喜歡
+													</label>
+													<label class="radio-inline">
+														<input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 非常不喜歡
+													</label>
+												</div>
+												<div class="col-xs-12 col-sm-3 col-md-2"><a href="" class="btn btn-Sent pull-right" title="">我要推薦!</a></div>
+											</div>
+										</div>
+										<div class="Proportion">
+											<section>
+												<div class="Title">非常喜歡(<span>50</span>)</div>
+												<div class="Value"><span></span></div>
+											</section>
+											<section>
+												<div class="Title">喜歡(<span>50</span>)</div>
+												<div class="Value"><span></span></div>
+											</section>
+											<section>
+												<div class="Title">尚可(<span>50</span>)</div>
+												<div class="Value"><span></span></div>
+											</section>
+											<section>
+												<div class="Title">不喜歡(<span>50</span>)</div>
+												<div class="Value"><span></span></div>
+											</section>
+											<section>
+												<div class="Title">非常不喜歡(<span>50</span>)</div>
+												<div class="Value"><span></span></div>
+											</section>
+										</div>
+										<!-- <a href="" class="btn btn-Sent" title="">我要推薦!</a> -->
+										<!-- <a href="" class="btn btn-Normal" title="">意見回報</a> -->
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Function -->
+		<div class="Block">
+			<div class="container">
+				<div class="row">
+					<article class="col-sm-12 col-md-12">
+						<!-- function -->
+						<div class="Function FunctionBottom hidden-xs">
+							<a href="#" class="icon-mail-alt">轉寄好友</a>
+							<a href="#" class="icon-reply-1">回上一頁</a>
+							<a href="#" class="icon-home-1">回首頁</a>
+						</div>
+					</article>
+				</div>
+			</div>
+		</div>
+		
+		<!--回頂端-->
+		<section id="GoTop">
+			<i class="icon-up-small"></i>
+		</section>
+	</section>
+	<!-- fatfooter -->
+	<section id="FatFooter">
+		<div class="container">
+			<input type="button" name="FatFooterBtn" id="FatFooterBtn" value="收合" class="btn FatFooterBtn">
+			<nav>
+				<ul>
+					<li><a href="#" title="" class="Title">主標題</a>
+						<ul>
+							<li><a href="" title="">次標</a></li>
+							<li><a href="" title="">次標</a></li>
+							<li><a href="" title="">次標</a></li>
+							<li><a href="" title="">次標</a></li>
+							<li><a href="" title="">次標</a></li>
+							<li><a href="" title="">次標</a></li>
+						</ul>
+					</li>
+					<li><a href="#" title="" class="Title">主標題</a>
+						<ul>
+							<li><a href="" title="">次標</a></li>
+							<li><a href="" title="">次標</a></li>
+							<li><a href="" title="">次標</a></li>
+						</ul>
+					</li>
+					<li><a href="#" title="" class="Title">主標題</a>
+						<ul>
+							<li><a href="" title="">次標</a></li>
+							<li><a href="" title="">次標</a></li>
+							<li><a href="" title="">次標</a></li>
+						</ul>
+					</li>
+					<li><a href="#" title="" class="Title">相關連結</a>
+						<ul>
+							<li><a href="" title="">次標</a></li>
+							<li><a href="" title="">次標</a></li>
+							<li><a href="" title="">次標</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</section>
+	<!-- footer -->
+	<section id="Footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="Logo">
+						<a href="#" title=""><img src="images/basic/logo_footer.png" alt="" class="img-responsive"></a>
+					</div>
+				</div>
+				<div class="col-md-7">
+					<div class="Footer_link">
+						<a href="#" title="" class="Privacy">政府網站資料開放宣告</a>
+						<a href="#" title="" class="Security">隱私權及安全政策</a>
+						<a href="#" title="" class="Accessible">開放文件格式(ODF)說明</a>
+					</div>
+					<div class="Footer_info">
+						<div class="Copyright">版權所有：經濟部中小企業處　執行單位：經濟部中小企業處</div>
+						<div class="Phone">服務時間：星期一至星期五09:00~18:00　服務電話：(02)2368-6858</div>
+						<div class="Address">聯絡地址：10646 臺北市羅斯福路二段95號3樓</div>
+						<div class="Counter">累計瀏覽人次:<span>46476653</span>　更新日期：<span>2017年01月19日</span></div>
+					</div>
+				</div>
+				<div class="col-md-1">
+					<div class="Footer_icon">
+						<a class="Egov" href="http://www.gov.tw/" title=""><img src="images/basic/egov.png" class="img-responsive" alt="E政府"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+</body>
+
+<!-- jQuery -->
+<script src="assets/js/jquery-1.11.2.js"></script>
+<!-- Bootstrap JavaScript -->
+<script src="assets/module/bootstrap-3.3.2/js/bootstrap.min.js"></script>
+<script src="assets/module/bootstrap-3.3.2/js/bootstrap-hover-dropdown.js"></script>
+
+<!-- Add fancyBox main JS and CSS files -->
+<script type="text/javascript" src="assets/module/fancyBox/jquery.fancybox.js?v=2.1.5"></script>
+
+<!-- slick + 自訂  -->
+<script src="assets/module/slick/slick.js"></script>
+<script src="js/slick-myset.js"></script> 
+
+<script src="js/myset.js"></script>
+</html>

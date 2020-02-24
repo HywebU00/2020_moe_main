@@ -1,0 +1,212 @@
+.Top-Bg{background: url(../images/bg.jpg) 50% top no-repeat ;}
+@media (max-width: 768px) {
+	.Top-Bg{ background:none;}
+}
+// 跳到主要內容區塊那顆要能click到
+a#gotoMainContent{
+	float: left;
+	position: absolute;
+	z-index: 4000;
+}
+
+// ------------------------- Header
+#Header{
+	background: rgba(75, 29, 106, 1);
+	width:100%;
+	.navbar{
+		margin-bottom: 0;
+		border:0;
+	}
+
+	// 下拉選單
+	.megamenu{
+		.container{ 
+			position: relative; 
+			.navbar-header{
+				.Logo{
+					margin-top: 7px;
+					display: inline-block;
+					a{
+						display:block;
+						img{
+							max-width: 400px;
+							max-height: 100px;
+						}
+					}
+				}
+			}
+			.Right{
+				margin-top: 5px;
+				li a{
+					font-size: 1.2em;
+					color:$color-adorn;
+					text-shadow:none;
+				}
+				.nav{
+					float: left;
+					margin-top: 10px;
+				}
+				.nav > li > a:hover, 
+				.nav > li > a:focus{
+					color:#fff !important;
+					background:$color-adorn;
+				}
+				.Search{
+					float:right;
+					input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { color: #fff; }
+					input:-moz-placeholder, textarea:-moz-placeholder { color: #fff; }
+					.btn-default{ border-color:transparent; }
+					.form-control {
+						border-radius: 15px 0 0 15px;
+						background:$color-adorn;
+						color:#fff;
+						border-color:transparent;
+					}
+					button{
+						background:$color-adorn;
+						border-radius: 0 15px 15px 0;
+						span{ 
+							color:#fff;
+							text-shadow:none;
+						}
+					}
+				}
+			}
+			.Left{
+				li a{
+					color:#fff;
+					text-shadow:none;
+					font-size: 1.2em;
+				}
+				li li a{ 
+					font-size: 1em;
+					color:$color-black;
+					&:hover,&:active{
+						color:#fff !important;
+						background:$color-adorn !important;
+					}
+				}
+				.nav > li > a:hover, 
+				.nav > li > a:focus,
+				.nav .open > a, .nav .open > a:hover, 
+				.nav .open > a:focus{
+					color:#fff !important;
+					background:rgba($color-adorn, 1);
+				}
+			}
+		}
+		.nav,.collapse,.dropdown,.dropdown{ position: static; }
+		.dropdown-menu { left: auto; }
+		.megamenu-content { padding: 20px 30px; }
+		.dropdown.megamenu-fw{
+			.dropdown-menu{ left: 0; right: 0; }
+		}
+		#offcanvas-right{
+			.navbar-nav{ position:relative; }
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	#Header{
+		.megamenu{
+			.container{
+				.navbar-header{
+					.navbar-toggle{}
+					.Logo{
+						a img{}
+					}
+				}
+				.Right{
+					li{
+						a{ font-size: 1em;}
+					}
+				}
+				.Left{
+					// 主選單置中
+					.navbar-nav{
+						float: none;
+						display: table;
+						margin: 0 auto;
+						li a{
+							font-size:$font-size*1.125;
+							font-weight: bold;
+							line-height:1.6;
+						}
+						li li a{ 
+							font-size:$font-size;
+							line-height:1.6;
+						}
+					}
+				}
+			}
+		}
+	}
+	// 側邊欄版型的Header設定
+	.Side{
+		.Left.navbar-collapse.collapse{
+			display:none !important;
+		}
+	}
+	
+}
+
+@media (max-width: 767px) {
+	#Header{
+		background: rgba(75, 29, 106, 1);
+		.megamenu{
+			.container{
+				.navbar-header{
+					text-align: center;
+					box-shadow:0px 4px 5px rgba(20%,20%,40%,0.3);
+					.navbar-toggle{ 
+						margin:8px 8px;
+						color:#fff;
+					}
+					.Logo{
+						margin-top: 0;
+						display: inline-block;
+						height: 50px;
+						a img{
+							// height: 40px;
+							max-width:180px;
+							margin-top: 8px;
+						}
+					}
+				}
+				.Right{
+					background:#eee;
+					margin-top: 0;
+					.nav{
+						float:none;
+					}
+					li a{
+						color:#000;
+						font-size: 1.2em;
+					}
+
+				}
+				.Left{
+					background:#eee;
+					li a{
+						color:#000;
+						text-shadow:none;
+						font-size: 1.2em;
+					}
+					li li a{ 
+						font-size: 1em;
+						color:$color-black;
+						&:hover,&:active{
+							color:#fff !important;
+							background:#555 !important;
+						}
+					}
+				}
+			}
+		}
+	}
+	// 側邊欄版型的Header設定
+	.Side{
+		.Left.navbar-collapse.collapse{}
+	}
+}

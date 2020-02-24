@@ -1,0 +1,123 @@
+// ------------------------- #FatFooter 
+#FatFooter { 
+	background: lighten($color-black, 30);
+	a{ &:hover{ text-decoration:none; } }
+
+	nav {
+		ul {
+			margin: 15px 0;
+			padding: 0;
+			li {
+				display: inline-block;
+				vertical-align: top;
+				text-align: center;
+				a{
+					margin:0 10px;
+					color:#fff;
+					display: block;
+					font-size: $font-size*1.25;
+					line-height:1.8;
+					font-weight: bold;
+					&:last-child{}
+					&:hover {
+						background:lighten($color-main, 20%);
+					}
+				}
+				a.Title{
+					&:hover.Title,&:focus.Title{}
+				}
+				
+				// 第二層
+				ul {
+					margin:0;
+					padding:0;
+					li {
+						display: inline;
+						a {
+							display: block;
+							font-size: $font-size;
+							line-height:2.2;
+							border:0;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.FatFooterBtn {
+		cursor: pointer;
+		display: block;
+		border-radius: 0 0 5px 5px;
+		font-size: $font-size*1.125;
+		font-weight: normal;
+		width: 60px;
+		margin: 0 auto;
+		background:$color-black;
+		color:#fff;
+		&:hover,&:focus{
+			cursor: pointer;
+		}
+	}
+	.close {
+		float:none;
+		opacity: 1;
+	}
+}
+
+@media (min-width: 1200px) {
+	#FatFooter
+	nav li {  
+		width: calc(100% / 5 - 0.3% );
+	}
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+	#FatFooter
+	nav ul li {
+		width: calc(100% / 5 - 1% );
+	}
+}
+@media (max-width: 767px){
+	#FatFooter nav ul li {  
+		width: calc(100% / 2 - 1% );
+	}
+}
+
+
+// ------------------------- #Footer
+#Footer{
+	@include Text;
+	padding: 15px 0;
+
+	a{
+		font-size: 115%;
+		line-height:2.6;
+		color: lighten($color-main, 0);
+		font-weight: bold;
+	}
+
+	span{ 
+		color: $color-blue;
+		margin:0 5px;
+	}
+	.Logo a{ 
+		display:block;
+		margin:0 auto;
+	}
+
+	.Footer_link a{
+		border-right:solid 1px rgba($color-black, .5);
+		padding:0 10px;
+		&:first-child{ padding-left: 0; }
+		&:last-child{ border-right:solid 1px rgba($color-black, 0); }
+		&:hover{ color:$color-adorn;}
+	}
+	.Footer_icon{ float:right; }
+}
+
+@media (min-width: 568px){
+	#Footer{
+		.Logo a{
+		}
+	}
+}

@@ -1,0 +1,122 @@
+// ------------------------- #FatFooter 
+#FatFooter { 
+	background: $color-main;
+	a{ &:hover{ text-decoration:none; } }
+
+	nav {
+		ul {
+			margin: 15px 0;
+			padding: 0;
+			li {
+				display: inline-block;
+				vertical-align: top;
+				text-align: center;
+				a{
+					margin:0 10px;
+					color:#fff;
+					display: block;
+					font-size: $font-size;
+					line-height:2.2;
+					border-bottom: solid 1px #1b8ef0;
+					&:last-child{}
+					&:hover {
+						background:darken($color-main, 10%);
+					}
+				}
+				a.Title{
+					&:hover.Title,&:focus.Title{}
+				}
+				
+				// 第二層
+				ul {
+					margin:0;
+					padding:0;
+					li {
+						display: inline;
+						a {
+							display: block;
+							font-size: 115%;
+							border:0;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.FatFooterBtn {
+		cursor: pointer;
+		display: block;
+		border-radius: 0 0 5px 5px;
+		font-size: $font-size*1.125;
+		font-weight: bold;
+		width: 60px;
+		margin: 0 auto;
+		&:hover,&:focus{
+			cursor: pointer;
+		}
+	}
+	.close {
+		float:none;
+		opacity: 1;
+	}
+}
+
+@media (min-width: 1200px) {
+	#FatFooter
+	nav li {  
+		width: calc(100% / 8 - 0.35% );
+	}
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+	#FatFooter
+	nav ul li {
+		width: calc(100% / 4 - 1% );
+	}
+}
+@media (max-width: 767px){
+	#FatFooter nav ul li {  
+		width: calc(100% / 2 - 1% );
+	}
+}
+
+
+// ------------------------- #Footer
+#Footer{
+	@include Text;
+	padding: 15px 0;
+	text-align:center;
+
+	a{
+		font-size: 115%;
+		line-height:2.6;
+		color: $color-adorn;
+		font-weight: bold;
+	}
+
+	span{ 
+		color: $color-blue;
+		margin:0 5px;
+	}
+	.Logo a{ 
+		display:block;
+		margin:0 auto;
+	}
+
+	.Footer_link a{
+		border-right:solid 1px $color-adorn;
+		padding:0 10px;
+		&:last-child{
+			border-right:solid 1px rgba($color-adorn, 0);
+		}
+	}
+	.Footer_icon{ float:right; }
+}
+
+@media (min-width: 568px){
+	#Footer{
+		.Logo a{
+			width:320px;
+		}
+	}
+}

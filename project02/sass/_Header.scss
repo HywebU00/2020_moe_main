@@ -1,0 +1,195 @@
+// 跳到主要內容區塊那顆要能click到
+a#gotoMainContent{
+	float: left;
+	position: absolute;
+	z-index: 4000;
+}
+// ------------------------- Header
+#Header{
+	// background:url(../images/bg.jpg) 50% top no-repeat;
+	min-height:100px;
+	.navbar{
+		margin-bottom: 0;
+		border: 0;
+	}
+
+	// 下拉選單
+	.megamenu{
+		.container{ 
+			position: relative; 
+			.navbar-header{
+				.Logo{
+					display: inline-block;
+					a{
+						display:block;
+						img{ 
+							max-width: 400px;
+							max-height: 100px; 
+						}
+					}
+				}
+			}
+			.Right{
+				li a{
+					color:$color-black;
+					font-size: 1.2em;
+				}
+				.nav{
+					float:left;
+					margin-top: 35px;
+				}
+				.nav > li > a:hover, 
+				.nav > li > a:focus{
+					color:#fff !important;
+					background:rgba($color-black, .7);
+				}
+				.Search{
+					float:right;
+					margin-top: 25px;
+					.navbar-form .input-group > .form-control {}
+					button{
+						background:#555;
+						span{ 
+							color:#fff;
+							text-shadow:none;
+						}
+					}
+				}
+			}
+			.Left{
+				background:rgba(255,254,38,.3);
+				border-radius: 3px;
+				li a{
+					color:$color-black;
+					text-shadow:none;
+					font-size: 1.2em;
+				}
+				li li a{ 
+					font-size: 1em;
+					&:hover,&:active{
+						color:#fff !important;
+						background:$color-main !important;
+					}
+				}
+				.nav > li > a:hover, 
+				.nav > li > a:focus,
+				.nav .open > a, .nav .open > a:hover, 
+				.nav .open > a:focus{
+					color:#fff !important;
+					background:rgba($color-black, .7);
+				}
+			}
+		}
+		.nav,.collapse,.dropdown,.dropdown{ position: static; }
+		.dropdown-menu { left: auto; }
+		.megamenu-content { padding: 20px 30px; }
+		.dropdown.megamenu-fw{
+			.dropdown-menu{ left: 0; right: 0; }
+		}
+		#offcanvas-right{
+			.navbar-nav{ position:relative; }
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	#Header{
+		.megamenu{
+			.container{
+				.navbar-header{
+					.navbar-toggle{}
+					.Logo{ 
+						a img{}
+					}
+				}
+				.Right{
+					li{
+						a{ 
+							font-size: 1.125em;
+							font-weight: bold;
+						}
+					}
+				}
+				.Left{
+					// 主選單置中
+					.navbar-nav{
+						float: none;
+						display: table;
+						margin: 0 auto;
+						li a{ 
+							font-size: 1.125em;
+							font-weight: bold;
+							line-height:2;
+						}
+						li li a{ 
+							font-size: 1em;
+							line-height:1.6;
+						}
+
+					}
+				}
+			}
+		}
+	}
+	// 側邊欄版型的Header設定
+	.Side{
+		.Left.navbar-collapse.collapse{
+			display:none !important;
+		}
+	}
+	
+}
+
+@media (max-width: 767px) {
+	#Header{
+		background:#fff;
+		min-height:auto;
+		.megamenu{
+			.container{
+				.navbar-header{
+					text-align: center;
+					box-shadow:0px 4px 5px rgba(20%,20%,40%,0.3);
+					.navbar-toggle{ margin:8px 8px; }
+					.Logo{
+						display: inline-block;
+						height: 50px;
+						margin-top:0;
+						a img{
+							height: 40px;
+							margin-top: 8px;
+						}
+					}
+				}
+				.Right{
+					background: #eee;
+					.nav{
+						margin-top: 0;
+						float:none;
+					}
+					.nav > li{
+						border-right: none;
+					}
+					.Search{
+						margin-top: 0;
+						float:none;
+						.navbar-form .input-group > .form-control {
+							background: #fff;
+						}
+						button{
+							background:#555;
+							span{ 
+								color:#fff;
+								text-shadow:none;
+							}
+						}
+					}
+				}
+				.Left{background: #eee;}
+			}
+		}
+	}
+	// 側邊欄版型的Header設定
+	.Side{
+		.Left.navbar-collapse.collapse{}
+	}
+}
