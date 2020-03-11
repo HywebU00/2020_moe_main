@@ -90,8 +90,9 @@
 	padding: 15px 0;
 
 	a{
-		font-size: 115%;
-		line-height:2.6;
+		display: inline-block;
+		// font-size: 115%;
+		// line-height:2.6;
 		color: $color-adorn;
 		font-weight: bold;
 	}
@@ -108,6 +109,8 @@
 	.Footer_link a{
 		border-right:solid 1px rgba($color-black, .5);
 		padding:0 10px;
+		margin: 10px 0;
+		margin-left: -4px;
 		&:first-child{ padding-left: 0; }
 		&:last-child{ border-right:solid 1px rgba($color-black, 0); }
 		&:hover{
@@ -120,8 +123,13 @@
 
 @media (min-width: 568px){
 	#Footer{
-		.Logo a{
-			width:320px;
+		.Logo a{ width:320px; }
+	}
+}
+@media (max-width: 530px){
+	#Footer{
+		.Footer_link a{
+			&:last-child{ padding: 0; }
 		}
 	}
 }

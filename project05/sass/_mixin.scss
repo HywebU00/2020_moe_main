@@ -48,7 +48,7 @@ $color-black: #000;
 // ------------------------- 按鈕
 @mixin Btn_More() {
 	display:block;
-	margin: 10px auto 20px;
+	margin: 1.25em auto .75em;
 	padding:5px 80px;
 	font-size:$font-size*1.125;
 	background:$color-main;

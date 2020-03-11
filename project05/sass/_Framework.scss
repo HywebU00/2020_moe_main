@@ -61,8 +61,11 @@ dt,dd{line-height: 180%;}
 
 
 .Block{
-	// padding:15px 0;
-	img{ margin:0 auto;}
+	padding: 1.25em 0;
+	>img{
+		margin: -1.25em auto;
+
+	}
 	&:first-child{ background:none !important;}
 	&:nth-child(odd){
 		background:#f1f1f1;
@@ -137,7 +140,14 @@ picture{
 		background:rgba($color-black,1) !important;
 	}
 }
-
+.btn-film-links{
+	display: block;
+	padding: .75em 1em;
+	&:hover, &:focus, &:active{
+		background:$color-adorn;
+		color:$color-white;
+	}
+}
 // 社群按鈕
 .Community_Btn{
 	float: right;
@@ -439,6 +449,7 @@ picture{
 	// 單張輪播(主圖)
 	.Singleplay{
 		margin-top: -15px;
+		margin-bottom: -30px !important;
 		.Pic{
 			// 圖片 + 文字項目
 			position: relative;
@@ -457,7 +468,7 @@ picture{
 				// padding: 10px 20px 30px;
 				// color: #fff;
 				// width: 100%;
-				padding: 5px 15px;
+				padding: 1em 0;
 				text-align:center;
 				a{
 					text-decoration: none;
@@ -1112,7 +1123,7 @@ iframe{
 // ------------------------- 自訂圖片連結
 .CustomLink{
 	margin: 0 -15px;
-	padding:0 !important;
+	padding: 0 0 !important;
 	a{
 		display:block;
 		img{
@@ -1135,7 +1146,7 @@ iframe{
 // ------------------------- 連結四宮格
 .SquareLink{
 	margin: 0 -15px;
-	padding:0 !important;
+	padding: 0 0 !important;
 	&:before, &:after{
 		content: "";
 		display: table;
