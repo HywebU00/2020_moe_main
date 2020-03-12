@@ -296,14 +296,26 @@ dt,dd{line-height: 180%;}
 		}
 	}
 }
-
-@media (max-width: 991px) {
+@media (max-width:767px) {
 	.Block{
-		.Box{
-			margin-bottom: 25px;
+		.row > div{
+			margin-bottom: 3.5em;
+			&:last-child{ margin-bottom: 0; }
+
+			.Box.Links{
+				.row > div{ margin-bottom: 0; }
+			}
 		}
 	}
 }
+
+// @media (max-width: 991px) {
+// 	.Block{
+// 		.Box{
+// 			margin-bottom: 25px;
+// 		}
+// 	}
+// }
 
 
 // 按鈕set
