@@ -95,14 +95,25 @@ dt,dd{line-height: 180%;}
 		}
 	}
 }
-
-@media (max-width: 991px) {
+@media (max-width:767px) {
 	.Block{
-		.Box{
-			// margin-bottom: 25px;
+		.row > div{
+			margin-bottom: 3.5em;
+			&:last-child{ margin-bottom: 0; }
+
+			.Box.Links{
+				.row > div{ margin-bottom: 0; }
+			}
 		}
 	}
 }
+// @media (max-width: 991px) {
+// 	.Block{
+// 		.Box{
+// 			// margin-bottom: 25px;
+// 		}
+// 	}
+// }
 
 // 主視覺
 .Key-Visual{
@@ -326,9 +337,10 @@ picture{
 		.media-More{ 
 			background:lighten($color-black, 20%);
 			color: #fff;
-			padding:3px 10px;
+			padding: .35em 1em;
 			border-radius: 3px;
-			line-height: 2;
+			margin-top: .4em;
+			display: inline-block;
 			&:hover{
 				background:$color-main;
 				text-decoration:none;
