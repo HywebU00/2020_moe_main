@@ -50,11 +50,13 @@ $color-black: #000;
 	display:block;
 	margin:0 auto;
 	padding:5px 20px;
-	font-size: $font-size*1.125;
+	font-size: $font-size;
 	background:adjust_hue(lighten(#ffa304, 4), -17);
 	color:$color-white;
 	border-radius:0;
 	transition: background 300ms ease-in;
+
+	border-radius: 4px;
 }
 @mixin Btn_GoTop() {
 	a{
