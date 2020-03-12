@@ -870,9 +870,13 @@ dt,dd{line-height: 180%;}
 					width:calc(100% / 2);
 					padding: 0 8px;
 
+					overflow: hidden;
+					height: 60px;
+
 					img {
 						width: 100%;
-						height:auto; 
+						// height:auto; 
+						min-height: 60px;
 					}
 				}
 			}
