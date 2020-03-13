@@ -15,7 +15,7 @@ $(function(){
 		$('#Btn_GoTop').hide();
 
 		$(window).scroll(function() {
-			if ( $(this).scrollTop() > 900){
+			if ( $(this).scrollTop() > 200){
 				$('#Btn_GoTop').fadeIn(600);
 			}else {
 				$('#Btn_GoTop').stop().fadeOut(600);
