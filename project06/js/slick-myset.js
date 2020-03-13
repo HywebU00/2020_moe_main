@@ -53,11 +53,11 @@ $(function(){
     $('.Responsive_slider').slick({
         dots: true,
         infinite: true,
-        speed: 500,
+        speed: 1200,
         slidesToShow: 3,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 1500,
+        autoplaySpeed: 2400,
         responsive: [{
             breakpoint: 900,
             settings: {
