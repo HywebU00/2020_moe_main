@@ -75,6 +75,13 @@ dt,dd{line-height: 180%;}
 				color:#000;
 			}
 		}
+		a.btn-film-links{&:after{
+			    background: #f1f1f1 !important;
+		    }
+			&:hover, &:focus, &:active{
+				&:after{ background:$color-adorn !important;}
+			}
+		}
 	}
 	.Box{
 		padding:0 20px;
@@ -151,12 +158,34 @@ picture{
 		background:rgba($color-black,1) !important;
 	}
 }
-.btn-film-links{
+a.btn-film-links{
 	display: block;
 	padding: .75em 1em;
+	max-height: 70px;
+    overflow: hidden;
+    overflow: hidden;
+    text-overflow: -o-ellipsis-lastline;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+
+    position: relative;
+
+    &:after{
+    	content: '';
+	    position: absolute;
+	    width: 100%;
+	    height: 10px;
+	    bottom: 0;
+	    left: 0;
+	    background: #fff;
+    }
+
 	&:hover, &:focus, &:active{
 		background:$color-adorn;
 		color:$color-white;
+		&:after{ background:$color-adorn; }
 	}
 }
 // 社群按鈕
