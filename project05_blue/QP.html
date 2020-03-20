@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link type="image/ico" rel="icon" href="images/basic/favicon.png" /> 
-	<title>主題網五</title> 
+	<title>主題網五-藍色</title>
 
 	<!-- Bootstrap CSS -->
 	<link href="assets/module/bootstrap-3.3.2/css/bootstrap.css" rel="stylesheet">
@@ -185,41 +185,49 @@
 				<div class="row">
 					<div class="col-md-12">
 						<div class="Box">
-							<h2 class="Title">RSS訂閱</h2>
+							<h2 class="Title">最新消息</h2>
 							<div class="Inner clear-fix">
 								<!--  -->
-								<div class="Block">
-									<h3>什麼是 RSS？</h3>
-									<p>RSS的英文全稱是 Really Simple Syndication，是一種透過 XML 標準所制定的資料格式，可以將網頁內容抽取出來，使用者透過 RSS Feed，即可直接取得有興趣的資訊，更賦予使用者隨選訂閱的功能。</p>
-								</div>
-								<div class="Block">
-									<h3>如何訂閱 RSS？</h3>
-									<ol>
-										<li>下載安裝免費或試用版的 RSS Reader。</li>
-										<li>在以下提供RSS之項目名稱上，按滑鼠右鍵，然後選擇「複製捷徑」。</li>
-										<li>開啟RSS Reader程式，在工具列上按fileaAdd Feed，將複製的 RSS 捷徑加到 RSS Reader 程式中。</li>
-										<li>將複製捷徑輸入到空格中，即完成RSS訂閱。</li>
-									</ol>
-								</div>
-								<div class="Block">
-									<h3>如何取得免費 RSS 閱讀軟體？</h3>
-									<p>在下列網站中可以下載安裝免費或試用版的 RSS 閱讀軟體：</p>
-									<ol>
-										<li><a href="http://www.rssreader.com/download.htm" title="">RSS Reader <i class="icon-book-alt"></i></a></li>
-										<li><a href="http://www.sharpreader.net/" title="">SHARP Reader <i class="icon-book-alt"></i></a></li>
-									</ol>
-								</div>
-								<div class="Block">
-									<h3>本網站提供RSS訂閱項目清單：</h3>
-									<ol>
-										<li><a href="" title="">新聞專區<i class="icon-rss-alt"></i></a></li>
-										<li><a href="" title="">消費警訊<i class="icon-rss-alt"></i></a></li>
-										<li><a href="" title="">法規資訊<i class="icon-rss-alt"></i></a></li>
-									</ol>
-								</div>
-								<div class="Block">
-									<h3>著作權說明：</h3>
-									<p>本網站所提供之RSS格式新聞，僅提供使用者閱讀。新聞所有內容（包括著作、圖片、檔案、資訊、資料）著作權為經濟部中小企業處所有，任何人不得逕自重製、改作、編輯、散布、公開發表、公開播送、公開傳輸。</p>
+								<div class="Block Inner_Bg">
+									<form class="form-horizontal">
+										<div class="form-group">
+											<label for="inputName" class="col-md-2 control-label">標題</label>
+											<div class="col-md-8">
+												<input type="text" class="form-control" id="inputName" placeholder="標題">
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="inputName" class="col-md-2 control-label">內文</label>
+											<div class="col-md-8">
+												<input type="text" class="form-control" id="inputName" placeholder="標題">
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="inputDate" class="col-md-2 control-label">日期</label>
+											<div class="col-md-4">
+												<div class="input-group date">
+													<input type="date" class="form-control" id="inputDate" placeholder="起">
+													<div class="input-group-addon">
+														<span class="icon-calendar"></span>
+													</div>
+												</div>	
+											</div>
+											<div class="col-md-4">
+												<div class="input-group date">
+													<input type="date" class="form-control" placeholder="迄">
+													<div class="input-group-addon">
+														<span class="icon-calendar"></span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="form-group">
+											<div class="col-md-offset-2 col-md-10">
+												<button type="submit" class="btn btn-Sent">送出查詢</button>
+												<button type="clear" class="btn btn-Normal">重設</button>
+											</div>
+										</div>
+									</form>
 								</div>
 							</div>
 						</div>
@@ -242,7 +250,7 @@
 				</div>
 			</div>
 		</div>
-
+		
 		<!--回頂端-->
 		<section id="Btn_GoTop">
 			<a href="#Header" title=""><span><i class="icon-up-dir-2"></i></span>回頁首</a>
@@ -347,6 +355,7 @@
 			</div>
 		</div>
 	</section>
+
 </body>
 
 <!-- jQuery -->

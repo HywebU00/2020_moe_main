@@ -67,12 +67,18 @@ dt,dd{line-height: 180%;}
 		margin: -1.75em auto;
 	}
 	&:first-child{ background:none !important;}
-	&:nth-child(odd){
+	&:nth-child(even){
 		background:#f1f1f1;
 		.tabs {
 			.active>a{
 				background:#fff;
 				color:#000;
+			}
+		}
+		a.btn-film-links{
+			&:after{ background:#f1f1f1 !important; }
+			&:hover, &:focus, &:active{
+				&:after{ background:$color-adorn !important; }
 			}
 		}
 	}
