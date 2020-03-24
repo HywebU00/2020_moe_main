@@ -19,8 +19,10 @@
 					line-height:2.2;
 					font-weight: bold;
 					&:last-child{}
-					&:hover {
-						background:lighten($color-main, 20%);
+					&:hover, &:focus {
+						// background: #555;
+						background: none;
+						box-shadow: inset 0px 0px 0px 1px rgba(255,255,255,1);
 					}
 				}
 				a.Title{
@@ -92,8 +94,11 @@
 	a{
 		font-size: 115%;
 		line-height:2.6;
-		color: $color-adorn;
+		color: #222;
 		font-weight: bold;
+		&:hover,&:focus{
+			color: $color-adorn;
+		}
 	}
 
 	span{ 

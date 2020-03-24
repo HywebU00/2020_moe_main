@@ -12,6 +12,7 @@
 		margin-left: 5px;
 	}
 	.Inner_Content{
+		background: #fff;
 		.Title{
 			margin:15px 0;
 		}
@@ -108,7 +109,8 @@
 		// margin-bottom: 15px;
 	}
 	.Block{
-		margin:20px 0;
+		// margin:20px 0;
+		background: #fff !important;
 	}
 	.Box{
 		border-top: 0 !important;
@@ -489,9 +491,10 @@
 	font-size: 15px;
 	padding:20px;
 	border-radius: 5px;
-	background: lighten($color-gray, 45%);
+	// background: lighten($color-gray, 45%);
 	// width:550px;
 	margin: 20px 0;
+	box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.2);
 
 	h4{ 
 		margin:0 0 20px;
@@ -524,7 +527,7 @@
 				float:left;
 				width:85%;
 				height:15px;
-				background:#fff;
+				background: #f1f1f1;
 				border-radius: 15px;
 				overflow:hidden;
 				span{
