@@ -13,6 +13,7 @@
 	}
 	.Inner_Content{
 		background: #fff;
+		padding: 0;
 		.Title{
 			margin:15px 0;
 		}
@@ -64,18 +65,19 @@
 	a{
 		display: inline-block;
 		margin-left: 8px;
-		color: #fff;
-		background: rgba($color-black,1);
+		color: #222;
+		background: #f1f1f1;
 		padding: 5px 10px;
 		border-radius: 15px;
 		&:before {
-			color: #fff;
+			color: #222;
 			margin-right: 8px;
 		}
 		&:hover,&:focus {
 			color: #fff;
 			background: rgba($color-adorn,1);
 			text-decoration: none;
+			&:before {color: #fff;}
 		}
 	}
 }
