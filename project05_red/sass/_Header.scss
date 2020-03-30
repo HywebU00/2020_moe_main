@@ -11,7 +11,12 @@ a#gotoMainContent{
 
 // ------------------------- Header
 #Header{
-	background: $color-main;
+	// background: $color-main;
+
+	// background: linear-gradient(to right, rgba(137,0,2,1) 0%,rgba(242,104,0,1) 100%);
+	background: url(../images/bg-nav-whiteline.png) left 88px repeat-x,
+				linear-gradient(to right, rgba(137,0,2,1) 0%,rgba(242,104,0,1) 100%);
+
 	width:100%;
 	.navbar{
 		margin-bottom: 0;
@@ -43,7 +48,7 @@ a#gotoMainContent{
 				margin-top: 5px;
 				li a{
 					font-size: 1.2em;
-					color:$color-adorn;
+					color:#fff;
 					text-shadow:none;
 				}
 				.nav{
@@ -156,7 +161,7 @@ a#gotoMainContent{
 
 @media (max-width: 767px) {
 	#Header{
-		background: rgba(75, 29, 106, 1);
+		background: linear-gradient(to right, rgba(137,0,2,1) 0%,rgba(242,104,0,1) 100%);
 		.megamenu{
 			.container{
 				.navbar-header{
@@ -169,11 +174,12 @@ a#gotoMainContent{
 					.Logo{
 						margin-top: 0;
 						display: inline-block;
-						height: 50px;
+						height: 42px;
+						margin: 0;
 						a img{
 							// height: 40px;
 							max-width:180px;
-							margin-top: 8px;
+							margin-top: 4px;
 						}
 					}
 				}
