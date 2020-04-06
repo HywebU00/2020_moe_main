@@ -324,6 +324,7 @@
 		// background: #e5e5e5;
 		margin: 0 15px 15px 0;
 		box-sizing: border-box;
+		a{ padding: 0; }
 		p{
 			background:#e5e5e5;
 			margin-top: 8px;
@@ -352,6 +353,12 @@
 				margin: 0 auto;
 			}
 		}
+	}
+}
+
+a.fancybox-nav{
+	&:hover, &:focus{
+		background: rgba(0,0,0,.25);
 	}
 }
 
