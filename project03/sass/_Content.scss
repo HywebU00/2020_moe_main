@@ -110,10 +110,14 @@
 	.Block{
 		margin:20px 0;
 	}
+
 	.Box{
 		border-top: 0 !important;
 		padding: 0;
 		.Title{ text-align:left !important;}
+		.Block{
+			margin: -20px 0;
+		}
 	}
 
 	.Inner_Bg{
@@ -564,7 +568,7 @@
 .Sitemap{
 	dl{
 		padding: 15px;
-		background:rgba(0, 0, 0, 1);
+		background:#67676A;
 		border-radius: 5px;
 		color:#fff;
 		dt{color:#fff;}

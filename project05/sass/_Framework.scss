@@ -67,7 +67,7 @@ dt,dd{line-height: 180%;}
 
 	}
 	&:first-child{ background:none !important;}
-	&:nth-child(odd){
+	&:nth-child(even){
 		background:#f1f1f1;
 		.tabs {
 			.active>a{
@@ -101,6 +101,7 @@ dt,dd{line-height: 180%;}
 			@include Subtitle;
 		}
 	}
+	.Block{ background: none; }
 }
 @media (max-width:767px) {
 	.Block{
@@ -278,7 +279,7 @@ a.btn-film-links{
 		>h4{
 			margin:3px 0 !important;
 
-			max-height: 50px;
+			// max-height: 50px;
 			overflow: hidden;
 			text-overflow: -o-ellipsis-lastline;
 			text-overflow: ellipsis;
@@ -292,8 +293,7 @@ a.btn-film-links{
 			}
 		}
 		p{
-			max-height: 40px;
-			overflow: hidden;
+			// max-height: 40px;
 			overflow: hidden;
 			text-overflow: -o-ellipsis-lastline;
 			text-overflow: ellipsis;
@@ -303,14 +303,14 @@ a.btn-film-links{
 		}
 	}
 }
-@media (min-width: 768px){
-	.thumbnail{ height: 320px; }
-}
-@media (max-width:767px) {
-	.thumbnail{
-		img{ height: 240px;}
-	}
-}
+// @media (min-width: 768px){
+// 	.thumbnail{ height: 320px; }
+// }
+// @media (max-width:767px) {
+// 	.thumbnail{
+// 		img{ height: 240px;}
+// 	}
+// }
 
 
 
@@ -1164,7 +1164,7 @@ iframe{
 // ------------------------- 自訂圖片連結
 .CustomLink{
 	margin: 0 -15px;
-	padding: 0 0 !important;
+	padding: 2em 0 !important;
 	a{
 		display:block;
 		img{
@@ -1187,7 +1187,7 @@ iframe{
 // ------------------------- 連結四宮格
 .SquareLink{
 	margin: 0 -15px;
-	padding: 0 0 !important;
+	padding: 2em 0 !important;
 	&:before, &:after{
 		content: "";
 		display: table;

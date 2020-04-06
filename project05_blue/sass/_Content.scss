@@ -12,7 +12,7 @@
 		margin-left: 5px;
 	}
 	.Inner_Content{
-		background: #fff;
+		background: #fff !important;
 		padding: 0;
 		.Title{
 			margin:15px 0;
@@ -565,7 +565,7 @@
 .Sitemap{
 	dl{
 		padding: 15px;
-		background:rgba(0, 0, 0, 1);
+		background: #6d6d6d;
 		border-radius: 5px;
 		color:#fff;
 		dt{color:#fff;}
