@@ -197,19 +197,22 @@ a.btn-film-links{
 		display: inline-block;
 		border-radius: 50%;
 		margin:0 2px;
+
+		color: #fff;
+		font-size: 0;
 	}
 
-	.Rss-BTN i,.FB-BTN i,.Twitter-BTN i,.Google-BTN i,.Plurk-BTN i,.Print-BTN i{
-		color: #fff;
-		font-size: 1.25em;
-	}
+	// .Rss-BTN i,.FB-BTN i,.Twitter-BTN i,.Google-BTN i,.Plurk-BTN i,.Print-BTN i{
+	// 	color: #fff;
+	// 	font-size: 1.25em;
+	// }
 
 	.Rss-BTN{background: #f8991d !important;}
-	.FB-BTN{background: #3a5ba0 !important;}
+	.FB-BTN{background: url(../images/basic/icon_facebook.svg) center center no-repeat, #3a5ba0; background-size: 24px 24px; }
 	.Twitter-BTN{background: #17b3c9 !important;}
 	.Google-BTN{background: #cf262a !important;}
 	.Plurk-BTN{background: #f2793e !important;}
-	.Print-BTN{ background: #555 !important; }
+	.Print-BTN{ background: url(../images/basic/icon_print.svg) center center no-repeat, #555; background-size: 24px 24px; }
 }
 @media (max-width:767px) {
 	.Community_Btn{
