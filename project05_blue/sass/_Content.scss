@@ -35,11 +35,11 @@
 		padding: 0;
 		margin: 15px 0;
 		background: none !important;
-		font-size: 18px;
+		font-size: 1.125em;
 
 		a{ color: rgba($color-black,1); }
 		i {
-			font-size: 14px;
+			font-size: .875em;
 			width: 28px;
 			height: 28px;
 			line-height: 28px;
@@ -107,7 +107,7 @@
 // 主要內容區 .Inner_Content
 .Inner_Content{
 	a{
-		font-size: 16px;
+		font-size: 1em;
 		// margin-bottom: 15px;
 	}
 	.Block{
@@ -135,7 +135,7 @@
 
 			a{ 
 				display:block;
-				font-size: 16px;
+				font-size: 1em;
 				color:lighten($color-black, 0);
 				padding:10px 15px;
 				background:#fff;
@@ -201,11 +201,11 @@
 
 // 頁數
 .Page{
-	font-size: 16px;
+	font-size: 1em;
 	margin:10px 0;
 	span{ 
 		color: $color-adorn;
-		font-size: 20px;
+		font-size: 1.25em;
 		margin:0 3px;
 	}
 	.total{
@@ -358,7 +358,7 @@
 	.slick-prev:before,
 	.slick-next:before {
 		font-family: 'slick';
-		font-size: 20px;
+		font-size: 1.25em;
 		line-height: 1;
 		opacity: .75;
 		color: #000;
@@ -490,7 +490,7 @@
 
 /*反饋*/
 .Feedback{
-	font-size: 15px;
+	font-size: 1em;
 	padding:20px;
 	border-radius: 5px;
 	// background: lighten($color-gray, 45%);
@@ -523,7 +523,7 @@
 				float:left;
 				width:15%;
 				margin:0 !important;
-				font-size: 14px;
+				font-size: .875em;
 			}
 			.Value{ 
 				float:left;
