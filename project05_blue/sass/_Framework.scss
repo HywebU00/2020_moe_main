@@ -1187,7 +1187,7 @@ iframe{
 // ------------------------- 連結四宮格
 .SquareLink{
 	margin: 0 -15px;
-	padding:0 !important;
+	padding: 2em 0 !important;
 	&:before, &:after{
 		content: "";
 		display: table;
