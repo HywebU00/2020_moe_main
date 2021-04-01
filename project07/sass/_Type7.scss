@@ -1,0 +1,232 @@
+// #Header {
+// 	background: #003677;
+// 	// 下拉選單
+// 	.megamenu{
+// 		.container{
+// 			.Right{
+// 				.Search{}
+// 			}
+// 		}
+// 	}
+// }
+
+/////////////////////////////////////////////////
+/////////////// 以版型五_blue做修改  //////////////
+/////////////////////////////////////////////////
+
+.Block{
+	h2.Title{
+		margin: 15px 0 35px !important;
+
+		position: relative;
+		&:before, &:after{
+			content: '';
+			position: absolute;
+			height: 3px;
+			bottom: -10px;
+			left: 50%;
+			margin-left: -60px;
+		}
+		&:before{
+			background: $color-main;
+			width: 60px;
+			z-index: 2;
+		}
+		&:after{
+			width: 120px;
+			background: $color-secondary;
+			z-index: 1;
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	#Header{
+		.megamenu{
+			.container{
+				.Left{
+					.navbar-nav{
+						display: inherit;
+						margin-left: 2.2em;
+					}
+				}
+			}
+		}
+	}
+}
+
+// Framework
+.Date{
+	font-size: 1.125em;
+    padding: .25em 1.5em;
+    font-family: monospace;
+}
+
+// ------------------------- 列表
+.List{
+	li{
+		a{
+			padding: .5em 0;
+		}
+	}
+}
+// 圖文欄
+.thumbnail{
+	.caption{
+		padding: 1.5em 1em;
+
+		position: relative;
+		&:after{
+			content: '';
+			position: absolute;
+			width: 26px;
+			height: 3px;
+			background: $color-main;
+		}
+
+		position: relative;	
+		.meta{
+			span{
+				&.MetaTime{
+					position: absolute;
+					left: 0;
+					top: -20px;
+				}
+				&.Date{
+					background: $color-secondary;
+					border: solid 1px #fff;
+					color: #fff;
+					padding: .5em 1em;
+				}
+			}
+		}
+	}
+}
+
+// ------------------------- 圖文欄 thumbnail
+.FotoxText{
+	.Inner{
+		.row{
+			>div{
+				 &:nth-child(even){
+					.caption{
+						.meta{
+							span{
+								&.Date{ background: $color-main; }
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+// ------------------------- slick slider
+.Slider{
+	// 單張輪播(主圖)
+	.Singleplay{
+		.Pic{
+			a{ display: block; }
+			.Text{
+				padding: 1em 1.5em;
+			    text-align: left;
+			    background: #f1f1f1;
+			}
+		}
+	}
+
+	// 圓點位置
+	.slick-dots {
+		width: 400px;
+		position: absolute;
+		right: 0;
+	    bottom: 15px;
+		text-align: right;
+		margin: 0;
+		padding-right: 1em;
+		background: #f1f1f1;
+
+	    li{
+	    	margin: 0 2px;
+	    }
+	}
+}
+
+// ------------------------- U00頁籤
+.tabs {
+	>h2{
+		>a{
+			box-shadow: inset 0px -4px 0px 0px $color-main;
+			border-top: 2px solid $color-main;
+			padding: 16px 0;
+			color: $color-main;
+		}
+		&:first-of-type{
+			>a{
+				box-shadow: inset 0px -4px 0px 0px $color-main,
+							inset 2px 0px 0px 0px $color-main;
+			}
+		}
+		&:last-of-type{
+			>a{
+				box-shadow: inset 0px -4px 0px 0px $color-main,
+							inset -2px 0px 0px 0px $color-main;
+			}
+		}
+		&.active>a{
+			box-shadow: none;
+			background: $color-main !important;
+			color: #fff !important;
+			span{
+				position: relative;
+				&:before, &:after{
+					content: '';
+					position: absolute;
+					width: 10px;
+					height: 2px;
+					background: #fff;
+					top: 50%;
+				}
+
+				&:before{
+					left: -20px;
+				}
+				&:after{
+					right: -20px;
+				}
+			}
+		}
+	}
+
+	@media (max-width: 599px) {
+		>h2{
+			>a{ box-shadow: none; }
+			&:first-of-type,
+			&:last-of-type{
+				>a{ box-shadow: none; }
+			}
+		}
+	}
+}
+
+// ------------------------- #FatFooter 
+#FatFooter {
+	background: none;
+}
+.co_bg{
+	// background: $color-main;
+	background: url(../images/foor_bg.jpg) 50% top no-repeat, #2c3c93;
+	color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+

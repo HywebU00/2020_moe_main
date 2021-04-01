@@ -1,0 +1,181 @@
+// ------------------------- #FatFooter 
+#FatFooter { 
+	background: $color-main;
+	a{ &:hover{ text-decoration:none; } }
+
+	nav {
+		ul {
+			margin: 15px 0;
+			padding: 0;
+			li {
+				display: inline-block;
+				vertical-align: top;
+				text-align: center;
+				a{
+					margin:0 10px;
+					color:#fff;
+					display: block;
+					font-size: 1.125em;
+					line-height:2.2;
+					font-weight: bold;
+					border-bottom: solid 1px rgba(255,255,255,.5);
+					&:last-child{}
+					&:hover, &:focus {
+						// background: #555;
+						background: none;
+						box-shadow: inset 0px 0px 0px 1px rgba(255,255,255,1);
+					}
+				}
+				a.Title{
+					&:hover.Title,&:focus.Title{}
+				}
+				
+				// 第二層
+				ul {
+					margin:0;
+					padding:0;
+					li {
+						display: inline;
+						a {
+							display: block;
+							font-size: 1em;
+							line-height:2.2;
+							border:0;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.FatFooterBtn {
+		cursor: pointer;
+		display: block;
+		border-radius: 0 0 5px 5px;
+		font-size: 1.125em;
+		line-height: 22px;
+		font-weight: normal;
+		width: 60px;
+		margin: 0 auto;
+		background:$color-black;
+		color:#fff;
+		&:hover,&:focus{
+			cursor: pointer;
+		}
+	}
+	.close {
+		float:none;
+		opacity: 1;
+		text-shadow: none;
+	}
+}
+
+@media (min-width: 1200px) {
+	#FatFooter
+	nav li {  
+		width: calc(100% / 8 - 0.35% );
+	}
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+	#FatFooter
+	nav ul li {
+		width: calc(100% / 4 - 1% );
+	}
+}
+@media (max-width: 767px){
+	#FatFooter nav ul li {  
+		width: calc(100% / 2 - 1% );
+	}
+}
+
+
+// ------------------------- #Footer
+#Footer{
+	@include Text;
+	padding: 15px 0;
+
+	a{
+		// font-size: 115%;
+		// line-height:2.6;
+		font-weight: bold;
+		color: $color-adorn;
+		&:hover,&:focus{
+			color: $color-adorn;
+			background: rgba(0,0,0,.25);
+		}
+	}
+
+	span{ 
+		// color: $color-blue;
+		margin:0 5px;
+	}
+	.Logo a{ 
+		display:block;
+		margin:0 auto;
+	}
+
+	.Footer_link{
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: flex-end;
+		margin-top: 1em;
+		a{
+			border-right:solid 1px $color-adorn;
+			padding:0 1.25em;
+			&:first-child{ padding-left: 0; }
+			&:last-child{ border-right:solid 1px rgba($color-black, 0); }
+			&:hover{
+				// background:none;
+				// color:$color-main;
+			}
+		}
+	}
+	.Footer_icon{ float:right; }
+
+	.Footer_info{
+		font-size: .9em;
+		padding-left: 5.8em;
+		padding-top: 1.25em;
+    	padding-bottom: 1.25em;
+	}
+	.Counter{
+		text-align: right;
+		font-size: .9em;
+		padding-top: 1.25em;
+		padding-right: 1em;
+	}
+}
+
+@media (min-width: 568px){
+	#Footer{
+		.Logo a{
+			width:320px;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	#Footer{
+		.Footer_link{
+			flex-flow: row wrap;
+			justify-content: center;
+			a{
+				border-right: none;
+				padding: .5em 1.25em;
+				// box-shadow: inset 0 0 0 1px #ffc701;
+				margin-bottom: 4px;
+				&:first-child{ padding-left: 1.25em; }
+				&:last-child{ border-right: none; }
+			}
+		}
+
+		.Footer_info{
+			padding-left: 0;
+			border-bottom: 1px solid rgba(255,255,255,.3);
+		}
+		.Counter{
+			text-align: center;
+			padding-right: 0;
+		}
+	}
+}
