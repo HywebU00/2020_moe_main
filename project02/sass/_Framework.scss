@@ -121,6 +121,66 @@ dt,dd{line-height: 180%;}
 	}
 }
 
+// 2021 新增樣式 ------------------------------------------------------------------- start
+// 連結
+.Link_List_flex{
+	.List{
+		display: flex;
+		flex-flow: row wrap;
+		a{
+			flex: 0 0 auto;
+			flex-basis: calc(100% / 3 - .5em);
+			max-width: calc(100% / 3 - .5em);
+			padding: .65em 3.5em .65em 1em;
+		    margin: .4em .25em;
+		    background: url(../images/basic/icon_link.svg) right 16px top 50% no-repeat, #fff;
+		    background-size: 32px 32px;
+		    box-shadow: inset 0 0 0 1px #ddd;
+		    transition: all ease .3s;
+		    color: #222;
+
+		    display: flex;
+		    align-items: center;
+		    >span{}
+
+		    &:hover, &:focus{
+		    	color: #fff;
+		    	background: url(../images/basic/icon_link_hover.svg) right 16px top 50% no-repeat, $color-main;
+		    	background-size: 32px 32px;
+		    	box-shadow: inset 0 0 0 1px $color-secondary;
+		    }
+		}
+	}
+
+	@media (max-width: 991px) {
+		.List{
+			a{
+				flex-basis: calc(100% / 2 - .5em);
+				max-width: calc(100% / 2 - .5em);
+			}
+		}
+	}
+
+	// @media (max-width: 768px) {
+	// 	.List{
+	// 		a{
+	// 			flex-basis: calc(100% / 2 - .5em);
+	// 			max-width: calc(100% / 2 - .5em);
+	// 		}
+	// 	}
+	// }
+
+	@media (max-width: 576px) {
+		.List{
+			a{
+				flex-basis: calc(100% / 1 - .5em);
+				max-width: calc(100% / 1 - .5em);
+			}
+		}
+	}
+}
+// 2021 新增樣式 ------------------------------------------------------------------ end
+
 
 // 區段背景色
 .bgColor-sec{
@@ -373,6 +433,7 @@ a.btn-film-links{
 				background:#eee;
 			}
 			a{
+				display:block;
 				font-weight: bold;
 				color:$color-black;
 				&:hover{
@@ -384,6 +445,44 @@ a.btn-film-links{
 					font-size: $font-size*.75;
 					padding: 1px;
 				}
+			}
+		}
+	}
+	// 20210326 新增樣式
+	.type-2-col{
+		display: flex;
+		flex-flow: row nowrap;
+
+		.media{
+			flex: 0 0 360px;
+			padding: 0 .5em;
+			margin: 0;
+
+			.foto{}
+			.caption{
+				.media-body{
+					overflow: initial;
+					.media-heading{
+						position: relative;
+
+						a{ padding: .5em 1.5em; }
+					}
+				}	
+			}
+		}
+		.media+ul{
+			flex: 1 1 auto;
+			flex-basis: calc(100% - 360px);
+			padding: 0 .5em;
+			li a{
+				padding: .9em 0;
+			}
+		}
+
+		@media (max-width: 991px) {
+			flex-flow: row wrap;
+			.media, .media+ul{
+				flex: 1 1 100%;
 			}
 		}
 	}
