@@ -4,10 +4,37 @@
 }
 // 跳到主要內容區塊那顆要能click到
 a#gotoMainContent{
-	float: left;
+	// float: left;
+	// position: absolute;
+	// z-index: 4000;
+
 	position: absolute;
-	z-index: 4000;
+    top: -2.2em;
+    left: 50%;
+    margin-left: -480px;
+    padding: 0 .5em;
+    height: 2em;
+    line-height: 2em;
+    background: #781f79;
+    color: #fff;
+    text-decoration: none;
+    z-index: 999999999999;
+    opacity: 0;
+    transition: .5s;
+    border-radius: 0px 0px 4px 4px;
+    color: #FFF;
+
+    @media (max-width: 767px) { 
+        display: none;
+    }
+    &:hover, &:focus {
+        outline: none;
+        top: 0;
+        opacity: 1;
+    }
+
 }
+
 
 // ------------------------- Header
 #Header{
@@ -16,6 +43,29 @@ a#gotoMainContent{
 	.navbar{
 		margin-bottom: 0;
 		border:0;
+
+		position: relative;
+		&:before{
+			content: '';
+			width: 100%;
+			height: 4px;
+			display: inline-block;
+			background: -webkit-linear-gradient(90deg, rgb(250, 214, 63), rgb(167, 27, 165));
+			background: linear-gradient(90deg, rgb(250, 214, 63), rgb(167, 27, 165));
+			position: absolute;
+			bottom: -4px;
+			left: 0;
+		}
+		// &:after{
+		// 	content: '';
+		// 	width: 70%;
+		// 	height: 3px;
+		// 	display: inline-block;
+		// 	background: green;
+		// 	position: absolute;
+		// 	bottom: 0;
+		// 	right: 0;
+		// }
 	}
 
 	// 下拉選單
@@ -54,7 +104,7 @@ a#gotoMainContent{
 				}
 				.nav > li > a:hover, 
 				.nav > li > a:focus{
-					color:#fff !important;
+					color:#222 !important;
 					background:$color-adorn;
 				}
 				.Search{
@@ -77,6 +127,13 @@ a#gotoMainContent{
 						}
 					}
 				}
+
+				// 導盲磚位置
+				>div{ position: relative; }
+				.accesskey{
+					left: 0px;
+					top: 0;
+				}
 			}
 			.Left{
 				li a{
@@ -88,7 +145,7 @@ a#gotoMainContent{
 					font-size: 1em;
 					color:$color-black;
 					&:hover,&:active{
-						color:#fff !important;
+						color:#222 !important;
 						background:$color-adorn !important;
 					}
 				}
@@ -96,7 +153,7 @@ a#gotoMainContent{
 				.nav > li > a:focus,
 				.nav .open > a, .nav .open > a:hover, 
 				.nav .open > a:focus{
-					color:#fff !important;
+					color:#222 !important;
 					background:rgba($color-adorn, 1);
 				}
 			}

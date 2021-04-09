@@ -84,6 +84,10 @@
 			background: $color-main;
 		}
 
+		&:hover,&:focus{
+			&:after{ background: $color-secondary; }
+		}
+
 		position: relative;	
 		.meta{
 			span{
@@ -94,7 +98,7 @@
 				}
 				&.Date{
 					background: $color-secondary;
-					border: solid 1px #fff;
+					border-top: solid 1px #fff;
 					color: #fff;
 					padding: .5em 1em;
 				}
