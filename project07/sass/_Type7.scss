@@ -142,14 +142,11 @@
 
 	// 圓點位置
 	.slick-dots {
-		width: 400px;
 		position: absolute;
 		right: 0;
-	    bottom: 15px;
-		text-align: right;
+	    bottom: -30px;
 		margin: 0;
-		padding-right: 1em;
-		background: #f1f1f1;
+		background: #fff;
 
 	    li{
 	    	margin: 0 2px;

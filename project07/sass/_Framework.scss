@@ -854,8 +854,10 @@ a.btn-film-links{
 
 		@media (max-width: 991px) {
 			flex-flow: row wrap;
-			.media, .media+ul{
+			.media,
+			.media+ul{
 				flex: 1 1 100%;
+				overflow: hidden;
 			}
 		}
 	}
