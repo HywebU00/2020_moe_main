@@ -250,6 +250,7 @@ $color_5: #a71ba5;
 			    height: 30px;
 			    position: absolute;
 			    bottom: 0;
+			    left: 0;
 			    span{
 			    	display: inline-block;
 			    	padding: .25em 1em;
@@ -823,11 +824,9 @@ a.btn-film-links{
 							left: 2px;
 							letter-spacing: -1px;
 							font-size: 100%;
-							@media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
-							    letter-spacing: -3px;
-							}
+							
 							b{
-								font-size: 160%;
+								font-size: 170%;
 								color: #fff;
 
 								position: relative;
@@ -842,6 +841,11 @@ a.btn-film-links{
 								}
 							}
 
+							// for 智障 ie的調整
+							@media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
+							    letter-spacing: -3px;
+							    b{ font-size: 150%; }
+							}
 						}
 					}
 				}	
