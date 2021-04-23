@@ -251,6 +251,7 @@ $color_5: #a71ba5;
 			    height: 30px;
 			    position: absolute;
 			    bottom: 0;
+			    left: 0;
 			    span{
 			    	display: inline-block;
 			    	padding: .25em 1em;
@@ -809,10 +810,12 @@ a.btn-film-links{
 			padding: 0 .5em;
 			margin: 0;
 
-			.foto{}
+			.foto{
+				a{ display: block; }
+			}
 			.caption{
 				.media-body{
-					overflow: initial;
+					overflow: visible;
 					.media-heading{
 						position: relative;
 						a{ padding: .5em 1.5em; }
@@ -824,6 +827,7 @@ a.btn-film-links{
 			flex: 1 1 auto;
 			flex-basis: calc(100% - 360px);
 			padding: 0 .5em;
+			overflow: hidden;
 			li a{
 				padding: .9em 0;
 			}
@@ -833,6 +837,11 @@ a.btn-film-links{
 			flex-flow: row wrap;
 			.media, .media+ul{
 				flex: 1 1 100%;
+			}
+			.media{
+				.caption .media-body .media-heading{
+					a{ padding: .5em 0; }
+				}
 			}
 		}
 	}
