@@ -250,6 +250,7 @@ $color_5: #a71ba5;
 			    height: 30px;
 			    position: absolute;
 			    bottom: 0;
+			    left: 0;
 			    span{
 			    	display: inline-block;
 			    	padding: .25em 1em;
@@ -779,10 +780,10 @@ a.btn-film-links{
 			.foto{}
 			.caption{
 				.media-body{
-					overflow: initial;
+					overflow: visible;
 					.media-heading{
 						position: relative;
-						a{ padding: .5em 1.5em; }
+						a{ padding: .5em 0; }
 					}
 				}	
 			}
@@ -791,6 +792,7 @@ a.btn-film-links{
 			flex: 1 1 auto;
 			flex-basis: calc(100% - 360px);
 			padding: 0 .5em;
+			overflow: hidden;
 			li a{
 				padding: .9em 0;
 			}
