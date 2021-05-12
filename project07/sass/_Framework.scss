@@ -87,6 +87,10 @@ dt,dd{line-height: 180%;}
 		background: url(../images/bg_block_01.jpg) 50% top no-repeat, #f4f4f4 !important;
 	}
 
+	&.Info_List{
+		background: url(../images/bg_Info_List.jpg) 50% top no-repeat !important;
+	}
+
 	h2.Title{
 		@include Title;
 	}
@@ -406,7 +410,7 @@ $color_5: #a71ba5;
 }
 // 資訊儀表板
 .Info_List{
-	background: url(../images/bg_Info_List.jpg) 50% top no-repeat !important;
+	// background: url(../images/bg_Info_List.jpg) 50% top no-repeat !important;
 
 	@media (max-width: 768px) {
 		background-position: center;
