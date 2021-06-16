@@ -8,6 +8,30 @@ $(function(){
 		$(this).parent().siblings().eq(0).removeClass('in');
 	});
 
+	/*------------------------------------*/
+    //////////分享按鈕 share dropdwon////////
+    /*------------------------------------*/
+    $('.Community_Btn .share').children('ul').hide();
+    $('.Community_Btn .share').prepend('<a href="#" class="shareButton">share分享按鈕</a>');
+    var _shareButton = $('.shareButton');
+    _shareButton.off().click(function(e) {
+        $(this).siblings('ul').stop(true, true).slideToggle();
+        e.preventDefault();
+    });
+    _shareButton.keyup(function(event) {
+        $(this).siblings('ul').stop(true, true).slideDown();
+    });
+    $('.Community_Btn .share').find('li:last>a').focusout(function(event) {
+        $(this).parent().parent('ul').hide();
+    });
+    // 點外面關閉share
+    $(document).on('touchend click', function(e) {
+        var container = $(".Community_Btn .share");
+        if (!container.is(e.target) && container.has(e.target).length === 0) {
+            $('.Community_Btn .share ul').hide();
+        }
+    });
+
 	// Go Top 
 	// var GoTop_Offset = $('#GoTop').offset().top;
 
