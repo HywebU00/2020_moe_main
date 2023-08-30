@@ -1281,7 +1281,7 @@ a.btn-film-links{
 			a{
 				display:inline-block;
 				text-align:center;
-				width: $width/3;
+				width: calc($width / 3);
 				padding:15px;
 				margin-bottom: 5px;
 				color:#000;
@@ -1500,7 +1500,7 @@ iframe{
 	.Square_Link_1_Colum{
 		.Item{
 			display:table;
-			width:($width/4)-1%;
+			width: calc(($width / 4) - 1%);
 			height:160px;
 			background:#e5e5e5;
 			float: left;
@@ -1579,7 +1579,7 @@ iframe{
 	.Fixed{
 		.Square_Link_1_Colum{
 			.Item{
-				width:($width/2)-2%;
+				width: calc(($width / 2) - 2%);
 			}
 			&:nth-child(odd){ margin:0 5px 5px 0; }
 			&:nth-child(even){ margin:0 0 5px 5px;}
