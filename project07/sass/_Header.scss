@@ -79,15 +79,15 @@ a#gotoMainContent{
 					padding-top: 10px;
 					padding-bottom: 10px;
 					line-height: 1;
-					font-size: 2em;  // mp頁的logo是用h1包覆，h1有自己的設定
-									 // 而內頁的logo是用div包覆，要彌補h1的高
-					// display: inline-block;
+					font-size: 2em; 	// mp頁的logo是用h1包覆，h1有自己的設定
+														// 而內頁的logo是用div包覆，要彌補h1的高
+														// display: inline-block;
 					a{
 						display:block;
 						img{
 							max-width: 400px;
 							max-height: 100px;
-							width: 250px;
+							width: 350px;
 						}
 					}
 				}
