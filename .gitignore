@@ -6,9 +6,6 @@ sass/
 # 忽略所有附檔名是 .map 的檔案
 *.map
 
-# 字型資料夾
-fonts/
-
 #vscode setting
 *.json
 
