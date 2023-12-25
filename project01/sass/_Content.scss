@@ -549,7 +549,7 @@ $aHover: darken($aColor, 10);
 			overflow: hidden;
 			a {
 				height: 46px;
-				overflow: hidden;
+				// overflow: hidden;
 				text-overflow: -o-ellipsis-lastline;
 				text-overflow: ellipsis;
 				display: -webkit-box;
