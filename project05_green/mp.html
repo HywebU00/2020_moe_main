@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+	<meta name="robots" content="noindex" />
+    <!-- 使用 noindex 禁止 Google 搜尋建立索引，套版時請工程師刪掉這行 -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link type="image/ico" rel="icon" href="images/basic/favicon.png" /> 
+	<title>主題網五-綠色</title> 
+
+	<!-- Bootstrap CSS -->
+	<link href="assets/module/bootstrap-3.3.2/css/bootstrap.css" rel="stylesheet">
+	<link href="assets/module/bootstrap-3.3.2/css/bootstrap-theme.css" rel="stylesheet">
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+	<!-- slick 輪播-->
+	<link href="assets/module/slick/slick.css" rel="stylesheet">
+	<link href="assets/module/slick/slick-theme.css" rel="stylesheet">
+
+	<!-- social-buttons -->
+	<link href="assets/module/fontello/css/fontello.css" rel="stylesheet">
+	<link href="assets/module/fontello/css/animation.css" rel="stylesheet">
+
+	<!-- 自訂CSS -->
+	<link href="css/all.css" rel="stylesheet">
+</head>
+<body id="_style1">
+	<a href="#C" id="gotoMainContent" title="跳到主要內容區塊" tabindex="1" class="sr-only sr-only-focusable">跳到主要內容區塊</a>
+	<!-- Header -->
+	<section id="Header">
+		<nav class="navbar megamenu" role="navigation">
+			<div class="container">
+				<div class="navbar-header">            
+					<button type="button" class="navbar-toggle pull-left" data-toggle="collapse" data-target="#offcanvas-left">
+						<span class="sr-only">Toggle navigation</span><i class="icon-menu"></i>
+					</button>
+					<h1 class="Logo"><a href="#" title=""><img src="images/basic/logo.png" alt="" class="img-responsive"></a></h1>
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#offcanvas-right">
+						<span class="sr-only">Toggle navigation</span><i class="icon-down-open"></i>
+					</button>
+				</div>
+				<div class="Right collapse navbar-collapse" id="offcanvas-right" role="navigation">
+					<div class="pull-sm-right pull-md-right pull-lg-right">
+						<!-- 導盲磚U -->
+						<div class="accesskey hidden-xs">
+							<a href="#U" id="accesskeyU" name="U" title="右上方功能區塊" accesskey="U">:::</a>
+						</div>
+						<ul class="nav navbar-nav">
+							<li class="active"><a href="#" title="">回首頁</a></li>
+							<li><a href="#" title="">RSS訂閱</a></li>
+						</ul> 
+						<!-- <div class="Search">
+							<div class="accesskey hidden-xs">
+								<a href="#" id="accesskeyS" name="S" title="搜尋" accesskey="S">:::</a>
+							</div>
+							<form class="navbar-form pull-sm-right pull-md-right pull-lg-right" role="search">       
+								<div class="input-group">
+									<input type="text" class="form-control" placeholder="請輸入查詢字串">
+									<span class="input-group-btn">
+										<button type="button" class="btn btn-default">
+											<span class="glyphicon glyphicon-search"></span>
+										</button>
+									</span>
+								</div>
+							</form>
+						</div> -->
+					</div>
+				</div>
+				<div class="Left collapse navbar-collapse" id="offcanvas-left" role="navigation">
+					<ul class="nav navbar-nav">
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">關於我們<b class="caret"></b></a>
+							<ul role="menu" class="dropdown-menu">
+								<li><a href="#" title="">認識中小企業</a></li>
+								<li><a href="#" title="">減碳服務站</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">資訊分享<b class="caret"></b></a>
+							<ul role="menu" class="dropdown-menu">
+								<li><a href="#" title="">新聞資訊</a></li>
+								<li><a href="#" title="">每月專欄</a></li>
+								<li><a href="#" title="">法規新知</a></li>
+								<li><a href="#" title="">主題報告</a></li>
+								<li><a href="#" title="">計畫公告</a></li>
+								<li><a href="#" title="">Line@</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">減碳工具<b class="caret"></b></a>
+							<ul role="menu" class="dropdown-menu">
+								<li><a href="#" title="">減碳學堂</a></li>
+								<li><a href="#" title="">減碳措施</a></li>
+								<li><a href="#" title="">健檢系統</a></li>
+								<li><a href="#" title="">常見問答</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">成果亮點<b class="caret"></b></a>
+							<ul role="menu" class="dropdown-menu">
+								<li><a href="#" title="">標竿案例</a></li>
+								<li><a href="#" title="">影音專區</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">政府資源<b class="caret"></b></a>
+							<ul role="menu" class="dropdown-menu">
+								<li><a href="#" title="">補助計畫</a></li>
+								<li><a href="#" title="">獎勵措施</a></li>
+								<li><a href="#" title="">獎項申請</a></li>
+								<li><a href="#" title="">優惠貸款</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</section>
+	<!-- Content -->
+	<section id="MainContent">
+		<!-- 導盲磚C -->
+		<div class="accesskey hidden-xs">
+			<a href="#C" id="accesskeyC" name="C" title="中央內容區塊" accesskey="C">:::</a>
+		</div>
+		<!-- slider -->
+		<div class="Block">
+			<!-- Slider -->
+			<div class="Box Slider _keepTouch">
+				<div class="Inner">
+					<section class="Singleplay">
+						<div class="Pic">
+							<a href="" title="">
+								<img src="images/Key-Visual.jpg" class="img-responsive">
+								<!-- <div class="Text">
+									<p>教育部公告：委託國立臺北教育大學辦理「106年度高級中等以下學校及幼兒園教師資格</p>
+								</div> -->
+							</a>
+						</div>
+						<div class="Pic">
+							<a href="" title="">
+								<img src="images/Key-Visual.jpg" class="img-responsive">
+								<!-- <div class="Text">
+									<p>教育部公告：委託國立臺北教育大學辦理「106年度高級中等以下學校及幼兒園教師資格</p>
+								</div> -->
+							</a>
+						</div>
+						<div class="Pic">
+							<a href="" title="">
+								<img src="images/Key-Visual.jpg" class="img-responsive">
+								<!-- <div class="Text">
+									<p>教育部公告：委託國立臺北教育大學辦理「106年度高級中等以下學校及幼兒園教師資格</p>
+								</div> -->
+							</a>
+						</div>
+					</section>
+				</div>
+			</div>
+		</div>
+		<!-- 快捷功能 3~5項 -->
+		<div class="Block">
+			<div class="container">
+				<div class="row quickLink">
+					<a href="#"><b>課程快搜</b></a>
+					<a href="#"><b>找新知</b></a>
+					<a href="#"><b>找輔導</b></a>
+					<a href="#"><b>找補助</b></a>
+					<a href="#"><b>標竿學習</b></a>
+				</div>
+			</div>
+		</div>
+		<!-- 兩欄連結 -->
+		<div class="Block">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<!-- 自訂圖片連結 -->
+						<div class="Box CustomLink">
+							<div class="Inner">
+								<a href="#" title=""><img src="images/CustomLink/01.jpg" alt="" class="img-responsive"></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<!-- 自訂圖片連結 -->
+						<div class="Box CustomLink">
+							<div class="Inner">
+								<a href="#" title=""><img src="images/CustomLink/02.png" alt="" class="img-responsive"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 綠色工廠 -->
+		<div class="Block _greenFactoty">
+			<div class="container">
+				<div class="row">
+					<h2>GREEN<br>TRANSFORMATION</h2>
+					<section class="items">
+						<a href="#">
+							<h3>知碳期</h3>
+							<p>透過深入了解減碳知識，進而分析企業整體策略</p>
+						</a>
+						<a href="#">
+							<h3>減碳期</h3>
+							<p>透過節能減碳、能源轉型減少溫室氣體的排放</p>
+						</a>
+						<a href="#">
+							<h3>淨零期</h3>
+							<p>透過新技術，使溫室氣體排放與吸收達到平衡</p>
+						</a>
+						<a href="#">
+							<h3>更年期</h3>
+							<p>透過新技術，使溫室氣衡</p>
+						</a>
+						<a href="#">
+							<h3>入土期</h3>
+							<p>透過新技術，使溫室氣體排放與吸收達到平衡</p>
+						</a>
+					</section>
+				</div>
+			</div>
+		</div>
+		<!-- 三欄 -->
+		<!-- 三欄 link list + thumbnail + FB -->
+		<div class="Block">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+						<!-- 列表 -->
+						<div class="Box List">
+							<h2 class="Title animated infinite bounce">新聞資訊</h2>
+							<div class="Inner">
+								<ul>
+									<li><a href="" title=""><span class="Date">2023-08-17</span>經濟部中小及新創企業署_碳服務Line@ 上線囉！！！</a></li>
+									<li><a href="" title=""><span class="Date">2023-05-15</span>中小企業減碳菜單上線囉！</a></li>
+									<li><a href="" title=""><span class="Date">2022-03-31</span>中小企業碳排放估算工具</a></li>
+									<li><a href="" title=""><span class="Date">2024-05-10</span>台灣第一個碳標籤認證草莓－台一休閒農場</a></li>
+									<li><a href="" title=""><span class="Date">2024-05-09</span>鋰對於歐盟的綠色和數位轉型至關重要</a></li>
+									<li><a href="" title=""><span class="Date">2024-05-09</span>面對氣候變遷不孤單！「氣候咖啡館」陪你面對末日焦慮</a></li>
+									<li><a href="" title=""><span class="Date">2024-05-03</span>2028年綠氨就可運抵台灣 睿禾控股簽訂台灣首張海外綠氫合作開發協議</a></li>
+								</ul>
+							</div>
+							<button type="submit" class="btn btn-normal More">更多內容</button>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<!-- 列表 -->
+						<div class="Box List">
+							<h2 class="Title animated infinite bounce">每月專欄</h2>
+							<div class="Inner">
+								<ul>
+									<li><a href="" title=""><span class="Date">2024-04-15</span>以終為始，掌握綠色循環設計關鍵</a></li>
+									<li><a href="" title=""><span class="Date">2024-03-22</span>ISO 14068-1：2023碳中和之架構和精神</a></li>
+									<li><a href="" title=""><span class="Date">2024-03-07</span>【企業必修課】減碳溝通：用數位媒體發揮永續影響力的1大重點及2種媒體資源</a></li>
+									<li><a href="" title=""><span class="Date">2024-02-26</span>企業永續發展輔導工具</a></li>
+									<li><a href="" title=""><span class="Date">2023-12-12</span>PAS 2060 : 2014 碳中和之架構和精神</a></li>
+									<li><a href="" title=""><span class="Date">2023-11-16</span>企業水足跡盤查概要</a></li>
+									<li><a href="" title=""><span class="Date">2023-10-24</span>GRI 2021版準則使用</a></li>
+								</ul>
+							</div>
+							<button type="submit" class="btn btn-normal More">更多內容</button>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<!-- 列表 -->
+						<div class="Box List">
+							<h2 class="Title animated infinite bounce">法規新知</h2>
+							<div class="Inner">
+								<ul>
+									<li><a href="" title=""><span class="Date">2023-07-26</span>排放大戶不適用「自願減量」換碳權 環署：不能重複計算</a></li>
+									<li><a href="" title=""><span class="Date">2023-05-19</span>碳權交易所最快7月成立 學者：額度認證將是關鍵</a></li>
+									<li><a href="" title=""><span class="Date">2022-09-30</span>網購包裝減量將入法 不得使用PVC材質 草案預告明年上路</a></li>
+									<li><a href="" title=""><span class="Date">2024-03-18</span>113年 淨零綠生活行動指引</a></li>
+									<li><a href="" title=""><span class="Date">2024-03-13</span>113年版 溫室氣體盤查作業指引</a></li>
+									<li><a href="" title=""><span class="Date">2023-08-02</span>環署推化學品「以租代買」促循環減量 初期以固態物先行</a></li>
+									<li><a href="" title=""><span class="Date">2023-08-24</span>氣候署：今年底碳交易規範到位 2025年徵收第一筆碳費</a></li>
+								</ul>
+							</div>
+							<button type="submit" class="btn btn-normal More">更多內容</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 單欄 link slider-->
+		<div class="Block">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<!-- Banner Slider -->
+						<div class="Box Slider">
+							<div class="Inner">
+								<section class="BannerSlide">
+									<div class="Set">
+										<a href=""><img src="images/banner/001.jpg" class="img-responsive"></a>
+										<a href=""><img src="images/banner/002.jpg" class="img-responsive"></a>
+										<a href=""><img src="images/banner/003.jpg" class="img-responsive"></a>
+										<a href=""><img src="images/banner/004.jpg" class="img-responsive"></a>
+										<a href=""><img src="images/banner/005.jpg" class="img-responsive"></a>
+										<a href=""><img src="images/banner/006.jpg" class="img-responsive"></a>
+										<a href=""><img src="images/banner/007.jpg" class="img-responsive"></a>
+										<a href=""><img src="images/banner/008.jpg" class="img-responsive"></a>
+										<a href=""><img src="images/banner/009.jpg" class="img-responsive"></a>
+										<a href=""><img src="images/banner/010.jpg" class="img-responsive"></a>
+									</div>
+									<div class="Set">
+										<a href=""><img src="images/banner/006.jpg" class="img-responsive"></a>
+										<a href=""><img src="images/banner/007.jpg" class="img-responsive"></a>
+										<a href=""><img src="images/banner/008.jpg" class="img-responsive"></a>
+										<a href=""><img src="images/banner/009.jpg" class="img-responsive"></a>
+										<a href=""><img src="images/banner/010.jpg" class="img-responsive"></a>
+										<a href=""><img src="images/banner/001.jpg" class="img-responsive"></a>
+										<a href=""><img src="images/banner/002.jpg" class="img-responsive"></a>
+										<a href=""><img src="images/banner/003.jpg" class="img-responsive"></a>
+										<a href=""><img src="images/banner/004.jpg" class="img-responsive"></a>
+										<a href=""><img src="images/banner/005.jpg" class="img-responsive"></a>
+									</div>
+								</section>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--回頂端-->
+		<section id="Btn_GoTop">
+			<a href="#Header" title=""><span><i class="icon-up-dir-2"></i></span>回頁首</a>
+		</section>
+	</section>
+	<!-- fatfooter -->
+	<section id="FatFooter">
+		<div class="container">
+			<input type="button" name="FatFooterBtn" id="FatFooterBtn" value="收合" class="btn FatFooterBtn">
+			<nav>
+				<ul>
+					<li><a href="#" title="" class="Title">關於我們</a>
+						<ul>
+							<li><a href="" title="">認識中小企業</a></li>
+							<li><a href="" title="">減碳服務站</a></li>
+						</ul>
+					</li>
+					<li><a href="#" title="" class="Title">資訊分享</a>
+						<ul>
+							<li><a href="" title="">新聞資訊</a></li>
+							<li><a href="" title="">每月專欄</a></li>
+							<li><a href="" title="">法規新知</a></li>
+							<li><a href="" title="">主題報告</a></li>
+							<li><a href="" title="">計畫公告</a></li>
+							<li><a href="" title="">Line@</a></li>
+						</ul>
+					</li>
+					<li><a href="#" title="" class="Title">減碳工具</a>
+						<ul>
+							<li><a href="" title="">減碳學堂</a></li>
+							<li><a href="" title="">減碳措施</a></li>
+							<li><a href="" title="">健檢系統</a></li>
+							<li><a href="" title="">常見問答</a></li>
+						</ul>
+					</li>
+					<li><a href="#" title="" class="Title">成果亮點</a>
+						<ul>
+							<li><a href="" title="">標竿案例</a></li>
+							<li><a href="" title="">影音專區</a></li>
+						</ul>
+					</li>
+					<li><a href="#" title="" class="Title">政府資源</a>
+						<ul>
+							<li><a href="" title="">補助計畫</a></li>
+							<li><a href="" title="">獎勵措施</a></li>
+							<li><a href="" title="">獎項申請</a></li>
+							<li><a href="" title="">優惠貸款</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</section>
+	<!-- footer -->
+	<section id="Footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="Logo">
+						<a href="#" title=""><img src="images/basic/logo.png" alt="" class="img-responsive"></a>
+					</div>
+				</div>
+				<div class="col-md-7">
+					<div class="Footer_link">
+						<a href="#" title="" class="Privacy">政府網站資料開放宣告</a>
+						<a href="#" title="" class="Security">隱私權及安全政策</a>
+						<a href="#" title="" class="Accessible">開放文件格式(ODF)說明</a>
+					</div>
+					<div class="Footer_info">
+						<div class="Counter">累計瀏覽人次:<span>46476653</span>　更新日期：<span>2017年01月19日</span></div>
+					</div>
+				</div>
+				<div class="col-md-1">
+					<div class="Footer_icon">
+						<a class="Egov" href="http://www.gov.tw/" title=""><img src="images/basic/egov.png" alt="E政府" class="img-responsive"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</body>
+
+<!-- jQuery -->
+<script src="assets/js/jquery-1.11.2.js"></script>
+<!-- Bootstrap JavaScript -->
+<script src="assets/module/bootstrap-3.3.2/js/bootstrap.min.js"></script>
+<script src="assets/module/bootstrap-3.3.2/js/bootstrap-hover-dropdown.js"></script>
+
+<!-- slick + 自訂  -->
+<script src="assets/module/slick/slick.js"></script>
+<script src="js/slick-myset.js"></script> 
+
+<script src="js/myset.js"></script>
+</html>
