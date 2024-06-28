@@ -459,6 +459,8 @@ dl dt {
   padding-left: 12px;
   margin-bottom: 0;
   color: #222;
+  line-height: 1.4;
+  font-size: 1.125em;
 }
 .Block._greenFactoty .items a:nth-child(1) h3 {
   color: #95c730;
