@@ -216,16 +216,13 @@ th {
 }
 
 ul li,
-ol li {
-  line-height: 180%;
+ol li,
+dt, dd {
+  line-height: 1.85em;
 }
 
 dl dt {
   color: gray;
-}
-
-dt, dd {
-  line-height: 180%;
 }
 
 .radio label, .checkbox label {
@@ -247,7 +244,7 @@ dt, dd {
 .table > thead > tr > td,
 .table > tbody > tr > td,
 .table > tfoot > tr > td {
-  padding: 8px;
+  padding: 12px 8px;
   line-height: 1.42857143;
   vertical-align: middle;
   border-top: 1px solid #cdcdcd;
@@ -1943,6 +1940,12 @@ iframe {
     width: 700px;
   }
 }
+.List_Download li a,
+.List_Link li a {
+  font-size: 100%;
+  line-height: 2;
+}
+
 .Top-Bg {
   background: url(../images/bg.jpg) 50% top no-repeat;
 }
@@ -2164,7 +2167,6 @@ a#gotoMainContent {
   color: #222;
   display: block;
   font-size: 1.125em;
-  line-height: 2.2;
   font-weight: bold;
 }
 #FatFooter nav > ul > li a:hover, #FatFooter nav > ul > li a:focus {
@@ -2184,7 +2186,6 @@ a#gotoMainContent {
 #FatFooter nav > ul > li > ul li a {
   display: block;
   font-size: 1em;
-  line-height: 2.2;
   border: 0;
 }
 #FatFooter .FatFooterBtn {
@@ -2220,7 +2221,6 @@ a#gotoMainContent {
 }
 #Footer a {
   font-size: 115%;
-  line-height: 2.6;
   color: #222;
   font-weight: bold;
 }
@@ -2273,6 +2273,10 @@ a#gotoMainContent {
 }
 #MainContent .Inner_Content .Title {
   margin: 15px 0;
+}
+#MainContent .Inner_Content li, #MainContent .Inner_Content dt, #MainContent .Inner_Content dl {
+  font-size: 112.5%;
+  line-height: 1.85em;
 }
 
 .accesskey {
@@ -2359,7 +2363,7 @@ a#gotoMainContent {
 }
 
 .Inner_Content a {
-  font-size: 1em;
+  font-size: 110%;
 }
 .Inner_Content .Block {
   background: #fff !important;
@@ -2789,8 +2793,8 @@ a#gotoMainContent {
 
 /*反饋*/
 .Feedback {
-  font-size: 1em;
-  padding: 20px;
+  font-size: 112.5%;
+  padding: 30px;
   border-radius: 5px;
   margin: 20px 0;
   box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.2);
@@ -2803,7 +2807,7 @@ a#gotoMainContent {
   margin: 5px 0;
 }
 .Feedback .inner h3 {
-  color: #555;
+  color: #2a7f00;
   font-weight: bold;
   margin: 0;
 }
@@ -2822,7 +2826,8 @@ a#gotoMainContent {
   float: left;
   width: 15%;
   margin: 0 !important;
-  font-size: 0.875em;
+  font-size: 100%;
+  font-weight: normal;
 }
 .Feedback .Proportion section .Value {
   float: left;
@@ -2890,8 +2895,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p {
-  margin-bottom: 15px;
-  font-size: 1em;
+  margin: 20px 0;
+  font-size: 112.5%;
+  line-height: 1.85em;
 }
 
 a {
