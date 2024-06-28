@@ -85,7 +85,7 @@ $(function(){
 	    // var tw = $('.tabSet').width(); //取得頁籤區塊的寬度，並存入變數tw中
 	    var tabItemHeight = $('.tabs>h2>a').innerHeight(); //取得頁籤項目含padding高度，並存入變數tabItemHeight中
 	    $('.tabs').find('.tabContent').css('top', tabItemHeight); //找到頁籤內容區塊，設定它的top等於頁籤項目高度
-	    $(window).on('load resize', function() {
+			$(window).on('load resize', function() {
 	    	var tw = $('.tabSet').width()*0.98; 
 	        $('.tabSet').each(function() { //各別處理每個頁籤組
 
@@ -108,25 +108,24 @@ $(function(){
 	    }
 	});
 
-	// fancy box
-	$(function(){
-		/* Button helper. Disable animations, hide close button, change title type and content */
-		$('.fancybox-buttons').fancybox({
-			openEffect  : 'none',
-			closeEffect : 'none',
-			prevEffect : 'none',
-			nextEffect : 'none',
-			closeBtn  : true,
-			helpers : {
-				title : {
-					type : 'inside'
-				},
-				buttons : {}
-			},
-			afterLoad : function() {
-				this.title = 'Image ' + (this.index + 1) + ' of ' + this.group.length + (this.title ? ' - ' + this.title : '');
-			}
-		});
-	});
-	
+	// // fancy box
+	// $(function(){
+	// 	/* Button helper. Disable animations, hide close button, change title type and content */
+	// 	$('.fancybox-buttons').fancybox({
+	// 		openEffect  : 'none',
+	// 		closeEffect : 'none',
+	// 		prevEffect : 'none',
+	// 		nextEffect : 'none',
+	// 		closeBtn  : true,
+	// 		helpers : {
+	// 			title : {
+	// 				type : 'inside'
+	// 			},
+	// 			buttons : {}
+	// 		},
+	// 		afterLoad : function() {
+	// 			this.title = 'Image ' + (this.index + 1) + ' of ' + this.group.length + (this.title ? ' - ' + this.title : '');
+	// 		}
+	// 	});
+	// });
 })

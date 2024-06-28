@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
-
 <head>
 	<meta name="robots" content="noindex" />
-    <!-- 使用 noindex 禁止 Google 搜尋建立索引，套版時請工程師刪掉這行 -->
+  <!-- 使用 noindex 禁止 Google 搜尋建立索引，套版時請工程師刪掉這行 -->
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link type="image/ico" rel="icon" href="images/basic/favicon.png" /> 
-	<title>主題網五-藍色</title>
+	<title>主題網五-綠色工廠</title>
 
 	<!-- Bootstrap CSS -->
 	<link href="assets/module/bootstrap-3.3.2/css/bootstrap.css" rel="stylesheet">
@@ -28,6 +27,9 @@
 	<link href="assets/module/fontello/css/fontello.css" rel="stylesheet">
 	<link href="assets/module/fontello/css/animation.css" rel="stylesheet">
 
+	<!-- 燈箱facybox -->
+	<link rel="stylesheet" type="text/css" href="assets/module/fancyBox/jquery.fancybox.min.css">
+
 	<!-- 自訂CSS -->
 	<link href="css/all.css" rel="stylesheet">
 </head>
@@ -40,18 +42,25 @@
 					<button type="button" class="navbar-toggle pull-left" data-toggle="collapse" data-target="#offcanvas-left">
 						<span class="sr-only">Toggle navigation</span><i class="icon-menu"></i>
 					</button>
-					<div class="Logo"><a href="#" title=""><img src="images/basic/logo.png" alt="" class="img-responsive"></a></div>
+					<h1 class="Logo"><a href="#" title=""><img src="images/basic/logo.png" alt="" class="img-responsive"></a></h1>
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#offcanvas-right">
 						<span class="sr-only">Toggle navigation</span><i class="icon-down-open"></i>
 					</button>
 				</div>
 				<div class="Right collapse navbar-collapse" id="offcanvas-right" role="navigation">
 					<div class="pull-sm-right pull-md-right pull-lg-right">
+						<!-- 導盲磚U -->
+						<div class="accesskey hidden-xs">
+							<a href="#U" id="accesskeyU" name="U" title="右上方功能區塊" accesskey="U">:::</a>
+						</div>
 						<ul class="nav navbar-nav">
 							<li class="active"><a href="#" title="">回首頁</a></li>
-							<li><a href="#" title="">網站導覽</a></li>
+							<li><a href="#" title="">RSS訂閱</a></li>
 						</ul> 
-						<div class="Search">   
+						<!-- <div class="Search">
+							<div class="accesskey hidden-xs">
+								<a href="#" id="accesskeyS" name="S" title="搜尋" accesskey="S">:::</a>
+							</div>
 							<form class="navbar-form pull-sm-right pull-md-right pull-lg-right" role="search">       
 								<div class="input-group">
 									<input type="text" class="form-control" placeholder="請輸入查詢字串">
@@ -62,97 +71,52 @@
 									</span>
 								</div>
 							</form>
-						</div>
+						</div> -->
 					</div>
 				</div>
 				<div class="Left collapse navbar-collapse" id="offcanvas-left" role="navigation">
 					<ul class="nav navbar-nav">
 						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">成立宗旨<b class="caret"></b></a>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">關於我們<b class="caret"></b></a>
 							<ul role="menu" class="dropdown-menu">
-								<li><a href="#" title="">第二層</a></li>
-								<li><a href="#" title="">第二層</a></li>
-								<li><a href="#" title="">第二層</a></li>
-								<li><a href="#" title="">第二層</a></li>
-								<li><a href="#" title="">第二層</a></li>
-								<li><a href="#" title="">第二層</a></li>
+								<li><a href="#" title="">認識中小企業</a></li>
+								<li><a href="#" title="">減碳服務站</a></li>
 							</ul>
 						</li>
 						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">最新消息<b class="caret"></b></a>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">資訊分享<b class="caret"></b></a>
 							<ul role="menu" class="dropdown-menu">
-								<li><a href="#" title="">第二層如果字很多的測試</a></li>
-								<li><a href="#" title="">第二層</a></li>
-								<li><a href="#" title="">第二層</a></li>
-								<li><a href="#" title="">第二層</a></li>
-								<li><a href="#" title="">第二層</a></li>
-								<li><a href="#" title="">第二層</a></li>
+								<li><a href="#" title="">新聞資訊</a></li>
+								<li><a href="#" title="">每月專欄</a></li>
+								<li><a href="#" title="">法規新知</a></li>
+								<li><a href="#" title="">主題報告</a></li>
+								<li><a href="#" title="">計畫公告</a></li>
+								<li><a href="#" title="">Line@</a></li>
 							</ul>
 						</li>
 						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">申請須知<b class="caret"></b></a>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">減碳工具<b class="caret"></b></a>
 							<ul role="menu" class="dropdown-menu">
-								<li><a href="#" title="">第二層</a></li>
-								<li><a href="#" title="">第二層</a></li>
-								<li><a href="#" title="">第二層</a></li>
-								<li><a href="#" title="">第二層</a></li>
-								<li><a href="#" title="">第二層</a></li>
-								<li><a href="#" title="">第二層</a></li>
+								<li><a href="#" title="">減碳學堂</a></li>
+								<li><a href="#" title="">減碳措施</a></li>
+								<li><a href="#" title="">健檢系統</a></li>
+								<li><a href="#" title="">常見問答</a></li>
 							</ul>
 						</li>
 						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">下載專區<b class="caret"></b></a>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">成果亮點<b class="caret"></b></a>
 							<ul role="menu" class="dropdown-menu">
-								<li><a href="#" title="">第二層</a></li>
-								<li><a href="#" title="">第二層</a></li>
-								<li><a href="#" title="">第二層</a></li>
-								<li><a href="#" title="">第二層</a></li>
-								<li><a href="#" title="">第二層</a></li>
-								<li><a href="#" title="">第二層</a></li>
+								<li><a href="#" title="">標竿案例</a></li>
+								<li><a href="#" title="">影音專區</a></li>
 							</ul>
 						</li>
 						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">歷屆足跡<b class="caret"></b></a>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">政府資源<b class="caret"></b></a>
 							<ul role="menu" class="dropdown-menu">
-								<li><a href="#" title="">第二層</a></li>
-								<li><a href="#" title="">第二層</a></li>
-								<li><a href="#" title="">第二層</a></li>
-								<li><a href="#" title="">第二層</a></li>
-								<li><a href="#" title="">第二層</a></li>
-								<li><a href="#" title="">第二層</a></li>
-							</ul>
-						</li>
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">活動花絮<b class="caret"></b></a>
-							<ul role="menu" class="dropdown-menu">
-								<li><a href="#" title="">第二層如果字很多的測試</a></li>
-								<li><a href="#" title="">第二層</a></li>
-								<li><a href="#" title="">第二層</a></li>
-								<li><a href="#" title="">第二層</a></li>
-								<li><a href="#" title="">第二層</a></li>
-								<li><a href="#" title="">第二層</a></li>
-							</ul>
-						</li>
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">常見問答<b class="caret"></b></a>
-							<ul role="menu" class="dropdown-menu">
-								<li><a href="#" title="">第二層</a></li>
-								<li><a href="#" title="">第二層</a></li>
-								<li><a href="#" title="">第二層</a></li>
-								<li><a href="#" title="">第二層</a></li>
-								<li><a href="#" title="">第二層</a></li>
-								<li><a href="#" title="">第二層</a></li>
-							</ul>
-						</li>
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">聯絡資訊<b class="caret"></b></a>
-							<ul role="menu" class="dropdown-menu">
-								<li><a href="#" title="">第二層</a></li>
-								<li><a href="#" title="">第二層</a></li>
-								<li><a href="#" title="">第二層</a></li>
-								<li><a href="#" title="">第二層</a></li>
-								<li><a href="#" title="">第二層</a></li>
-								<li><a href="#" title="">第二層</a></li>
+								<li><a href="#" title="">補助計畫</a></li>
+								<li><a href="#" title="">獎勵措施</a></li>
+								<li><a href="#" title="">獎項申請</a></li>
+								<li><a href="#" title="">優惠貸款</a></li>
 							</ul>
 						</li>
 					</ul>
@@ -269,63 +233,42 @@
 			<input type="button" name="FatFooterBtn" id="FatFooterBtn" value="收合" class="btn FatFooterBtn">
 			<nav>
 				<ul>
-					<li><a href="#" title="" class="Title">成立宗旨</a>
+					<li><a href="#" title="" class="Title">關於我們</a>
 						<ul>
-							<li><a href="" title="">次標</a></li>
-							<li><a href="" title="">次標</a></li>
-							<li><a href="" title="">次標</a></li>
-							<li><a href="" title="">次標</a></li>
-							<li><a href="" title="">次標</a></li>
-							<li><a href="" title="">次標</a></li>
+							<li><a href="" title="">認識中小企業</a></li>
+							<li><a href="" title="">減碳服務站</a></li>
 						</ul>
 					</li>
-					<li><a href="#" title="" class="Title">最新消息</a>
+					<li><a href="#" title="" class="Title">資訊分享</a>
 						<ul>
-							<li><a href="" title="">次標</a></li>
-							<li><a href="" title="">次標</a></li>
-							<li><a href="" title="">次標</a></li>
+							<li><a href="" title="">新聞資訊</a></li>
+							<li><a href="" title="">每月專欄</a></li>
+							<li><a href="" title="">法規新知</a></li>
+							<li><a href="" title="">主題報告</a></li>
+							<li><a href="" title="">計畫公告</a></li>
+							<li><a href="" title="">Line@</a></li>
 						</ul>
 					</li>
-					<li><a href="#" title="" class="Title">申請須知</a>
+					<li><a href="#" title="" class="Title">減碳工具</a>
 						<ul>
-							<li><a href="" title="">次標</a></li>
-							<li><a href="" title="">次標</a></li>
-							<li><a href="" title="">次標</a></li>
+							<li><a href="" title="">減碳學堂</a></li>
+							<li><a href="" title="">減碳措施</a></li>
+							<li><a href="" title="">健檢系統</a></li>
+							<li><a href="" title="">常見問答</a></li>
 						</ul>
 					</li>
-					<li><a href="#" title="" class="Title">下載專區</a>
+					<li><a href="#" title="" class="Title">成果亮點</a>
 						<ul>
-							<li><a href="" title="">次標</a></li>
-							<li><a href="" title="">次標</a></li>
-							<li><a href="" title="">次標</a></li>
+							<li><a href="" title="">標竿案例</a></li>
+							<li><a href="" title="">影音專區</a></li>
 						</ul>
 					</li>
-					<li><a href="#" title="" class="Title">歷屆足跡</a>
+					<li><a href="#" title="" class="Title">政府資源</a>
 						<ul>
-							<li><a href="" title="">次標</a></li>
-							<li><a href="" title="">次標</a></li>
-							<li><a href="" title="">次標</a></li>
-						</ul>
-					</li>
-					<li><a href="#" title="" class="Title">活動花絮</a>
-						<ul>
-							<li><a href="" title="">次標</a></li>
-							<li><a href="" title="">次標</a></li>
-							<li><a href="" title="">次標</a></li>
-						</ul>
-					</li>
-					<li><a href="#" title="" class="Title">常見問答</a>
-						<ul>
-							<li><a href="" title="">次標</a></li>
-							<li><a href="" title="">次標</a></li>
-							<li><a href="" title="">次標</a></li>
-						</ul>
-					</li>
-					<li><a href="#" title="" class="Title">聯絡窗口</a>
-						<ul>
-							<li><a href="" title="">次標</a></li>
-							<li><a href="" title="">次標</a></li>
-							<li><a href="" title="">次標</a></li>
+							<li><a href="" title="">補助計畫</a></li>
+							<li><a href="" title="">獎勵措施</a></li>
+							<li><a href="" title="">獎項申請</a></li>
+							<li><a href="" title="">優惠貸款</a></li>
 						</ul>
 					</li>
 				</ul>
@@ -338,7 +281,7 @@
 			<div class="row">
 				<div class="col-md-4">
 					<div class="Logo">
-						<a href="#" title=""><img src="images/basic/logo_footer.png" alt="" class="img-responsive"></a>
+						<a href="#" title=""><img src="images/basic/logo.png" alt="" class="img-responsive"></a>
 					</div>
 				</div>
 				<div class="col-md-7">
@@ -348,21 +291,17 @@
 						<a href="#" title="" class="Accessible">開放文件格式(ODF)說明</a>
 					</div>
 					<div class="Footer_info">
-						<div class="Copyright">版權所有：經濟部中小企業處　執行單位：經濟部中小企業處</div>
-						<div class="Phone">服務時間：星期一至星期五09:00~18:00　服務電話：(02)2368-6858</div>
-						<div class="Address">聯絡地址：10646 臺北市羅斯福路二段95號3樓</div>
 						<div class="Counter">累計瀏覽人次:<span>46476653</span>　更新日期：<span>2017年01月19日</span></div>
 					</div>
 				</div>
 				<div class="col-md-1">
 					<div class="Footer_icon">
-						<a class="Egov" href="http://www.gov.tw/" title=""><img src="images/basic/egov.png" class="img-responsive" alt="E政府"></a>
+						<a class="Egov" href="http://www.gov.tw/" title=""><img src="images/basic/egov.png" alt="E政府" class="img-responsive"></a>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-
 </body>
 
 <!-- jQuery -->
