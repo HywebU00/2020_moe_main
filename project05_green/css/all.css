@@ -401,7 +401,7 @@ dl dt {
   background: none !important;
 }
 .Block:nth-child(even) {
-  background: #f1f1f1;
+  background: #f8f8f8;
 }
 .Block:nth-child(even) .tabs .active > a {
   background: #fff;
@@ -746,7 +746,7 @@ dl dt {
 }
 .Link_List_flex .List a:hover, .Link_List_flex .List a:focus {
   color: #fff;
-  background: url(../images/basic/icon_link_hover.svg) right 16px top 50% no-repeat, #318e00;
+  background: url(../images/basic/icon_link_hover.svg) right 16px top 50% no-repeat, #333;
   background-size: 32px 32px;
   box-shadow: inset 0 0 0 1px #f1f1f1;
 }
@@ -981,7 +981,7 @@ a.btn-film-links:hover:after, a.btn-film-links:focus:after, a.btn-film-links:act
 }
 
 #Btn_GoTop a {
-  background: #2481a0;
+  background: #222;
   color: #fff;
   text-decoration: none;
   border-radius: 50%;
@@ -1961,6 +1961,9 @@ a#gotoMainContent {
   float: left;
   position: absolute;
   z-index: 4000;
+  background: #ddd;
+  padding: 6px 16px;
+  border-radius: 0;
 }
 
 #Header {
