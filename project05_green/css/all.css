@@ -2663,6 +2663,9 @@ a#gotoMainContent {
   max-height: 360px;
   margin: 0 auto;
 }
+.FotoxText p img {
+  max-width: 100%;
+}
 
 @media (max-width: 767px) {
   .FotoxText .LeftFoto {
