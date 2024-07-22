@@ -1060,6 +1060,7 @@ a.btn-film-links:hover:after, a.btn-film-links:focus:after, a.btn-film-links:act
   -webkit-box-orient: vertical;
 }
 .thumbnail .caption > h4 a {
+  font-size: 110%;
   line-height: 1.4 !important;
   font-weight: bold;
   text-decoration: none;
@@ -2154,6 +2155,7 @@ a#gotoMainContent {
   display: inline-block;
   vertical-align: top;
   text-align: center;
+  min-width: 120px;
 }
 #FatFooter nav > ul > li > a {
   position: relative;
@@ -2199,17 +2201,19 @@ a#gotoMainContent {
   border-radius: 0 0 5px 5px;
   font-size: 1.125em;
   font-weight: normal;
-  width: 60px;
   margin: 0 auto;
+  padding: 0.5em 1.5em;
   background: #000;
   color: #fff;
 }
 #FatFooter .FatFooterBtn:hover, #FatFooter .FatFooterBtn:focus {
   cursor: pointer;
 }
-#FatFooter .close {
+#FatFooter .FatFooterBtn.close {
   float: none;
   opacity: 1;
+  text-shadow: none;
+  line-height: 1.42857143;
 }
 @media (max-width: 767px) {
   #FatFooter nav > ul {
@@ -2217,6 +2221,7 @@ a#gotoMainContent {
   }
   #FatFooter nav > ul li {
     width: 100%;
+    margin-bottom: 1.25em;
   }
 }
 
@@ -2368,7 +2373,7 @@ a#gotoMainContent {
 }
 
 .Inner_Content a {
-  font-size: 110%;
+  font-size: 1em;
 }
 .Inner_Content .Block {
   background: #fff !important;
