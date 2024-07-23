@@ -2284,10 +2284,6 @@ a#gotoMainContent {
 #MainContent .Inner_Content .Title {
   margin: 15px 0;
 }
-#MainContent .Inner_Content li, #MainContent .Inner_Content dt, #MainContent .Inner_Content dl {
-  font-size: 112.5%;
-  line-height: 1.85em;
-}
 
 .accesskey {
   position: absolute;
@@ -2913,6 +2909,14 @@ p {
   line-height: 1.85em;
 }
 
+.Inner_Content li, .Inner_Content dt, .Inner_Content dd {
+  font-size: 112.5%;
+  line-height: 1.85em;
+}
+.Inner_Content li li {
+  font-size: 100%;
+}
+
 a {
   color: #318e00;
 }
@@ -2923,7 +2927,7 @@ a:hover, a:focus {
 
 @media print {
   a[href]:after {
-    content: none !important "";
+    content: none !important;
   }
 }
 .clear-fix {
