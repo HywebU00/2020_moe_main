@@ -293,24 +293,6 @@ dl dt {
   height: 250px;
   position: relative;
 }
-@media (max-width: 1199px) {
-  .quickLink a {
-    flex-basis: 33.3333333333%;
-    max-width: 33.3333333333%;
-  }
-}
-@media (max-width: 700px) {
-  .quickLink a {
-    flex-basis: 50%;
-    max-width: 50%;
-  }
-}
-@media (max-width: 414px) {
-  .quickLink a {
-    flex-basis: 100%;
-    max-width: 100%;
-  }
-}
 .quickLink a::before {
   content: "";
   position: absolute;
@@ -386,6 +368,112 @@ dl dt {
 }
 .quickLink a:nth-child(5):hover, .quickLink a:nth-child(5):focus-visible {
   background: url(../images/bg_bulb5.png) 50% bottom no-repeat, url(../images/bg_bulb5_l.png) 50% top no-repeat;
+}
+@media (max-width: 1199px) {
+  .quickLink a {
+    flex-basis: 33.3333333333%;
+    max-width: 33.3333333333%;
+  }
+}
+@media (max-width: 700px) {
+  .quickLink a {
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+}
+@media (max-width: 470px) {
+  .quickLink a {
+    flex-basis: 100%;
+    max-width: 100%;
+    height: 130px;
+    display: flex;
+    align-items: center;
+  }
+  .quickLink a::before {
+    left: 73px;
+    top: 28px;
+    transform: translateX(-50%);
+    width: 44px;
+    height: 44px;
+  }
+  .quickLink a b {
+    position: initial;
+    padding: 10px 60px;
+    border-radius: 30px;
+    transform: translateX(0);
+    margin-left: 24%;
+    width: 65%;
+  }
+  .quickLink a:nth-child(1) {
+    background: url(../images/bg_bulb1.png) 20px 0 no-repeat, url(../images/bg_bulb_l.png) 20px 0 no-repeat;
+    background-size: auto 120px;
+    transition: 0.3s;
+  }
+  .quickLink a:nth-child(1):before {
+    background: url(../images/icon_bulb1.png) no-repeat;
+    background-size: contain;
+  }
+  .quickLink a:nth-child(1):hover, .quickLink a:nth-child(1):focus-visible {
+    background: url(../images/bg_bulb1.png) 20px 0 no-repeat, url(../images/bg_bulb1_l.png) 20px 0 no-repeat;
+    background-size: auto 120px;
+  }
+  .quickLink a:nth-child(2) {
+    background: url(../images/bg_bulb2.png) 20px 0 no-repeat, url(../images/bg_bulb_l.png) 20px 0 no-repeat;
+    background-size: auto 120px;
+    transition: 0.3s;
+  }
+  .quickLink a:nth-child(2):before {
+    background: url(../images/icon_bulb2.png) no-repeat;
+    background-size: contain;
+  }
+  .quickLink a:nth-child(2):hover, .quickLink a:nth-child(2):focus-visible {
+    background: url(../images/bg_bulb2.png) 20px 0 no-repeat, url(../images/bg_bulb2_l.png) 20px 0 no-repeat;
+    background-size: auto 120px;
+  }
+  .quickLink a:nth-child(3) {
+    background: url(../images/bg_bulb3.png) 20px 0 no-repeat, url(../images/bg_bulb_l.png) 20px 0 no-repeat;
+    background-size: auto 120px;
+    transition: 0.3s;
+  }
+  .quickLink a:nth-child(3):before {
+    background: url(../images/icon_bulb3.png) no-repeat;
+    background-size: contain;
+  }
+  .quickLink a:nth-child(3):hover, .quickLink a:nth-child(3):focus-visible {
+    background: url(../images/bg_bulb3.png) 20px 0 no-repeat, url(../images/bg_bulb3_l.png) 20px 0 no-repeat;
+    background-size: auto 120px;
+  }
+  .quickLink a:nth-child(4) {
+    background: url(../images/bg_bulb4.png) 20px 0 no-repeat, url(../images/bg_bulb_l.png) 20px 0 no-repeat;
+    background-size: auto 120px;
+    transition: 0.3s;
+  }
+  .quickLink a:nth-child(4):before {
+    background: url(../images/icon_bulb4.png) no-repeat;
+    background-size: contain;
+  }
+  .quickLink a:nth-child(4):hover, .quickLink a:nth-child(4):focus-visible {
+    background: url(../images/bg_bulb4.png) 20px 0 no-repeat, url(../images/bg_bulb4_l.png) 20px 0 no-repeat;
+    background-size: auto 120px;
+  }
+  .quickLink a:nth-child(5) {
+    background: url(../images/bg_bulb5.png) 20px 0 no-repeat, url(../images/bg_bulb_l.png) 20px 0 no-repeat;
+    background-size: auto 120px;
+    transition: 0.3s;
+  }
+  .quickLink a:nth-child(5):before {
+    background: url(../images/icon_bulb5.png) no-repeat;
+    background-size: contain;
+  }
+  .quickLink a:nth-child(5):hover, .quickLink a:nth-child(5):focus-visible {
+    background: url(../images/bg_bulb5.png) 20px 0 no-repeat, url(../images/bg_bulb5_l.png) 20px 0 no-repeat;
+    background-size: auto 120px;
+  }
+}
+@media (max-width: 414px) {
+  .quickLink {
+    margin: -20px 0;
+  }
 }
 
 .Block {
