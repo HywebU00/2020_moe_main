@@ -249,7 +249,6 @@ dl dt {
   vertical-align: middle;
   border-top: 1px solid #cdcdcd;
   word-wrap: break-word;
-  word-break: break-all;
 }
 
 .table-bordered {
@@ -401,8 +400,8 @@ dl dt {
     padding: 10px 60px;
     border-radius: 30px;
     transform: translateX(0);
-    margin-left: 24%;
-    width: 65%;
+    margin-left: 32%;
+    width: 60%;
   }
   .quickLink a:nth-child(1) {
     background: url(../images/bg_bulb1.png) 20px 0 no-repeat, url(../images/bg_bulb_l.png) 20px 0 no-repeat;
@@ -2985,7 +2984,6 @@ body, html {
 
 h1, h2, h3, h4, h5, h6 {
   word-wrap: break-word;
-  word-break: break-all;
   color: #318e00;
   margin-top: 10px;
   font-weight: bold;
