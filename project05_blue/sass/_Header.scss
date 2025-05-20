@@ -102,7 +102,10 @@ a#gotoMainContent{
 			}
 		}
 		.nav,.collapse,.dropdown,.dropdown{ position: static; }
-		.dropdown-menu { left: auto; }
+		.dropdown-menu { 
+			left: auto;
+			top: initial;
+		}
 		.megamenu-content { padding: 20px 30px; }
 		.dropdown.megamenu-fw{
 			.dropdown-menu{ left: 0; right: 0; }
